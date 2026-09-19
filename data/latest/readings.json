@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-09-19 22:42 JST",
- "data_asof": "2026-09-19 22:40",
+ "generated_at": "2026-09-20 06:30 JST",
+ "data_asof": "2026-09-20 06:30",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -21,7 +21,7 @@
  },
  "site": {
   "home": "https://xaudaily.com/",
-  "daily_archive": "https://xaudaily.com/d/2026-09-19.html",
+  "daily_archive": "https://xaudaily.com/d/2026-09-20.html",
   "archive_index": "https://xaudaily.com/d/",
   "brief_md": "https://xaudaily.com/brief.md",
   "llms_txt": "https://xaudaily.com/llms.txt",
@@ -33,7 +33,7 @@
    "label": "COMEX GC 连续",
    "unit": "美元/盎司",
    "source": "AKShare·新浪全球期货外盘（复用 GodInformation 采集链路）",
-   "asOf": "2026-09-18",
+   "asOf": "2026-09-19",
    "rows": [
     {
      "d": "2026-04-06",
@@ -2477,7 +2477,7 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-09-19 22:42",
+    "asOf": "2026-09-20 00:35",
     "url": "https://polymarket.com/zh/event/fed-decision-in-september-762",
     "cut50": 0.0,
     "cut25": 0.0,
@@ -2795,7 +2795,7 @@
    },
    "cbGold": {
     "source": "Wikipedia·Gold reserve（转引 World Gold Council/IMF IFS）",
-    "asOf": "2026-09-19",
+    "asOf": "2026-09-20",
     "trackerFrom": "2026-01",
     "rows": [
      {
@@ -2892,7 +2892,7 @@
    },
    "cbFlow": {
     "source": "IMF IRFCL·官方 SDMX API（官方储备黄金持仓 FTO 口径）",
-    "asOf": "2026-09-19",
+    "asOf": "2026-09-20",
     "firstMonth": "2023-01",
     "lastMonth": "2026-07",
     "months": [
@@ -3152,7 +3152,7 @@
    },
    "nfpTracker": {
     "source": "自建存档 nfp_tracker.json + 东方财富",
-    "asOf": "2026-09-19",
+    "asOf": "2026-09-20",
     "detail": [
      {
       "month": "2026-03",
@@ -3448,7 +3448,7 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-09-19 22:42",
+    "asOf": "2026-09-20 00:35",
     "url": "https://polymarket.com/zh/event/fed-decision-in-september-762",
     "cut50": 0.0,
     "cut25": 0.0,
