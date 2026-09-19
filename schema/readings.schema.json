@@ -1,0 +1,347 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xaudaily.com/schema/readings.schema.json",
+  "title": "xaudaily readings snapshot",
+  "description": "Machine-readable gold & macro snapshot served at https://xaudaily.com/readings.json. Within schema xaudaily.readings/v1 fields are only added, never renamed or removed.",
+  "type": "object",
+  "required": ["schema", "generated_at", "data_asof", "units", "site", "readings", "meta"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "xaudaily.readings/v1"
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "when the snapshot was assembled (JST), e.g. '2026-09-19 12:05 JST'"
+    },
+    "data_asof": {
+      "type": "string",
+      "description": "newest data timestamp inside the snapshot (JST)"
+    },
+    "units": {
+      "type": "object",
+      "description": "human-readable unit + scope per series key",
+      "additionalProperties": {"type": "string"}
+    },
+    "site": {
+      "type": "object",
+      "description": "canonical URLs for the same data on the site",
+      "additionalProperties": {"type": "string", "format": "uri"}
+    },
+    "readings": {
+      "type": "object",
+      "required": ["gold", "au", "cpi", "pce", "nfp", "ppi", "dxy", "gdp", "treasury", "oil", "extra"],
+      "additionalProperties": true,
+      "properties": {
+        "gold": {
+          "allOf": [{"$ref": "#/$defs/seriesBase"}],
+          "type": "object",
+          "required": ["source", "asOf", "rows"],
+          "properties": {
+            "label": {"type": "string"},
+            "unit": {"type": "string"},
+            "rows": {"$ref": "#/$defs/ohlcRows"},
+            "live": {"$ref": "#/$defs/liveTick"}
+          }
+        },
+        "au": {
+          "allOf": [{"$ref": "#/$defs/seriesBase"}],
+          "type": "object",
+          "required": ["source", "asOf"],
+          "properties": {
+            "label": {"type": "string"},
+            "unit": {"type": "string"},
+            "last": {"type": ["number", "null"]},
+            "chg1d": {"type": ["number", "null"]},
+            "spark": {"$ref": "#/$defs/numberArray"},
+            "session": {"type": "string"},
+            "live": {"$ref": "#/$defs/liveTick"}
+          }
+        },
+        "cpi": {"$ref": "#/$defs/monthlySeries"},
+        "pce": {"$ref": "#/$defs/monthlySeries"},
+        "nfp": {"$ref": "#/$defs/monthlySeries"},
+        "ppi": {"$ref": "#/$defs/monthlySeries"},
+        "dxy": {"$ref": "#/$defs/dateValueSeries"},
+        "gdp": {
+          "allOf": [{"$ref": "#/$defs/seriesBase"}],
+          "type": "object",
+          "required": ["source", "asOf", "quarters"],
+          "properties": {
+            "quarters": {"$ref": "#/$defs/quarterRows"},
+            "real": {"$ref": "#/$defs/quarterRows"}
+          }
+        },
+        "treasury": {
+          "allOf": [{"$ref": "#/$defs/seriesBase"}],
+          "type": "object",
+          "required": ["source", "asOf", "y10", "y30"],
+          "properties": {
+            "y10": {"$ref": "#/$defs/yieldSeries"},
+            "y30": {"$ref": "#/$defs/yieldSeries"}
+          }
+        },
+        "oil": {
+          "allOf": [{"$ref": "#/$defs/seriesBase"}],
+          "type": "object",
+          "required": ["source", "asOf", "brent", "wti"],
+          "properties": {
+            "brent": {"$ref": "#/$defs/priceSeries"},
+            "wti": {"$ref": "#/$defs/priceSeries"},
+            "spread": {"type": ["number", "null"]}
+          }
+        },
+        "extra": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "vix": {"$ref": "#/$defs/datedValue"},
+            "spdr": {
+              "type": "object",
+              "required": ["value", "date", "source"],
+              "properties": {
+                "value": {"type": ["number", "null"]},
+                "changePct": {"type": ["number", "null"]},
+                "date": {"type": "string"},
+                "source": {"type": "string"}
+              }
+            },
+            "fedRate": {
+              "type": "object",
+              "required": ["value", "date", "source"],
+              "properties": {
+                "value": {"type": ["number", "null"]},
+                "date": {"type": "string"},
+                "months": {"$ref": "#/$defs/stringArray"},
+                "vals": {"$ref": "#/$defs/numberArray"},
+                "nextDate": {"type": "string"},
+                "source": {"type": "string"},
+                "stale": {"type": "boolean"}
+              }
+            },
+            "polymarket": {
+              "type": "object",
+              "required": ["source", "cut50", "cut25", "hold", "hike25", "hike50"],
+              "properties": {
+                "source": {"type": "string"},
+                "asOf": {"type": "string"},
+                "url": {"type": "string", "format": "uri"},
+                "cut50": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+                "cut25": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+                "hold": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+                "hike25": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+                "hike50": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+              }
+            },
+            "cbFlow": {
+              "allOf": [{"$ref": "#/$defs/monthlySeries"}],
+              "type": "object",
+              "description": "net central-bank gold purchases, IMF reporting-country basis",
+              "properties": {
+                "firstMonth": {"type": "string"},
+                "lastMonth": {"type": "string"},
+                "cover": {
+                  "type": "array",
+                  "description": "how many reporting countries were included in each month (parallel to months[])",
+                  "items": {"type": ["integer", "null"]}
+                },
+                "years": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["year", "net"],
+                    "properties": {
+                      "year": {"type": "string"},
+                      "net": {"type": ["number", "null"]},
+                      "from": {"type": "string"},
+                      "to": {"type": "string"}
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "tops": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["code", "net"],
+                    "properties": {
+                      "code": {"type": "string"},
+                      "name": {"type": "string"},
+                      "nameEn": {"type": "string"},
+                      "base": {"type": ["number", "null"]},
+                      "last": {"type": ["number", "null"]},
+                      "net": {"type": ["number", "null"]},
+                      "asOf": {"type": "string"}
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "note": {"type": "string"}
+              }
+            },
+            "drivers": {
+              "type": "array",
+              "description": "directional scorecard derived from the readings, not observations",
+              "items": {
+                "type": "object",
+                "required": ["name", "score"],
+                "properties": {
+                  "name": {"type": "string"},
+                  "nameEn": {"type": "string"},
+                  "score": {"type": "number", "minimum": -100, "maximum": 100}
+                },
+                "additionalProperties": true
+              }
+            },
+            "events": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "date": {"type": "string"},
+                  "dateEn": {"type": "string"}
+                },
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["source_policy", "disclaimer", "attribution", "license"],
+      "properties": {
+        "source_policy": {"type": "string"},
+        "disclaimer": {"type": "string"},
+        "attribution": {"type": "string"},
+        "license": {"type": "string"},
+        "license_url": {"type": "string", "format": "uri"},
+        "citation": {"type": "string"},
+        "citation_en": {"type": "string"},
+        "docs": {"type": "string", "format": "uri"},
+        "homepage": {"type": "string", "format": "uri"},
+        "channel_param": {"type": "string"},
+        "update_schedule": {"type": "string"},
+        "stability": {"type": "string"},
+        "policy": {"type": "object", "additionalProperties": true}
+      },
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "seriesBase": {
+      "type": "object",
+      "required": ["source", "asOf"],
+      "properties": {
+        "source": {"type": "string", "minLength": 3},
+        "asOf": {"type": "string", "minLength": 4},
+        "stale": {"type": "boolean"}
+      }
+    },
+    "numberArray": {
+      "type": "array",
+      "items": {"type": ["number", "null"]}
+    },
+    "stringArray": {
+      "type": "array",
+      "items": {"type": ["string", "null"]}
+    },
+    "ohlcRows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["d", "c"],
+        "properties": {
+          "d": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+          "o": {"type": ["number", "null"]},
+          "h": {"type": ["number", "null"]},
+          "l": {"type": ["number", "null"]},
+          "c": {"type": ["number", "null"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "liveTick": {
+      "type": "object",
+      "properties": {
+        "last": {"type": ["number", "null"]},
+        "chg": {"type": ["number", "null"]},
+        "chg_pct": {"type": ["number", "null"]},
+        "date": {"type": "string"},
+        "time": {"type": "string"},
+        "source": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "monthlySeries": {
+      "allOf": [{"$ref": "#/$defs/seriesBase"}],
+      "type": "object",
+      "required": ["months", "vals"],
+      "properties": {
+        "months": {"$ref": "#/$defs/stringArray"},
+        "vals": {"$ref": "#/$defs/numberArray"},
+        "published": {"type": "string"},
+        "nextPub": {"type": "string"},
+        "freq": {"type": "string"},
+        "unit": {"type": "string"}
+      }
+    },
+    "dateValueSeries": {
+      "allOf": [{"$ref": "#/$defs/seriesBase"}],
+      "type": "object",
+      "required": ["dates", "vals"],
+      "properties": {
+        "dates": {"$ref": "#/$defs/stringArray"},
+        "vals": {"$ref": "#/$defs/numberArray"},
+        "unit": {"type": "string"}
+      }
+    },
+    "yieldSeries": {
+      "type": "object",
+      "required": ["dates", "vals", "last"],
+      "properties": {
+        "dates": {"$ref": "#/$defs/stringArray"},
+        "vals": {"$ref": "#/$defs/numberArray"},
+        "last": {"type": ["number", "null"]},
+        "chg5": {"type": ["number", "null"]},
+        "chg20": {"type": ["number", "null"]},
+        "slope20": {"type": ["number", "null"]},
+        "trend": {"type": "string"},
+        "pctile52": {"type": ["integer", "null"], "minimum": 0, "maximum": 100}
+      }
+    },
+    "priceSeries": {
+      "type": "object",
+      "required": ["dates", "vals", "last"],
+      "properties": {
+        "dates": {"$ref": "#/$defs/stringArray"},
+        "vals": {"$ref": "#/$defs/numberArray"},
+        "last": {"type": ["number", "null"]},
+        "chg30": {"type": ["number", "null"]},
+        "chg90": {"type": ["number", "null"]}
+      }
+    },
+    "quarterRows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["q", "val"],
+        "properties": {
+          "q": {"type": "string", "pattern": "^\\d{4}-Q[1-4]$"},
+          "val": {"type": ["number", "null"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "datedValue": {
+      "type": "object",
+      "required": ["value", "date", "source"],
+      "properties": {
+        "value": {"type": ["number", "null"]},
+        "date": {"type": "string"},
+        "source": {"type": "string"}
+      }
+    }
+  }
+}
