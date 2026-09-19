@@ -1,0 +1,24 @@
+Data in this repository (everything under data/ and the file DATA-DICTIONARY.md)
+is licensed under the Creative Commons Attribution 4.0 International License.
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material for any purpose,
+    even commercially
+
+Under the following terms:
+  - Attribution — You must give appropriate credit to "xaudaily.com", provide a
+    link to https://xaudaily.com/ , and indicate if changes were made.
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Suggested attribution:
+
+  数据来源：黄金读数 xaudaily.com（https://xaudaily.com/）
+  Source: Gold Data Reading, xaudaily.com — https://xaudaily.com/
+
+Code in this repository (clients/, scripts/, .github/) is licensed under the MIT
+License — see LICENSE-MIT.
+
+The data is provided as-is, without warranty of any kind, and is not investment
+advice.
