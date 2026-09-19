@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-09-19 12:05 JST",
- "data_asof": "2026-09-19 12:03",
+ "generated_at": "2026-09-19 22:42 JST",
+ "data_asof": "2026-09-19 22:40",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -1905,7 +1905,6 @@
    "asOf": "2026-09-18",
    "brent": {
     "dates": [
-     "2026-03-18",
      "2026-03-19",
      "2026-03-20",
      "2026-03-23",
@@ -2035,7 +2034,6 @@
      "2026-09-18"
     ],
     "vals": [
-     107.38,
      108.65,
      112.19,
      99.94,
@@ -2162,15 +2160,14 @@
      108.75,
      105.83,
      104.82,
-     98.77
+     103.87
     ],
-    "last": 98.77,
-    "chg30": 19.7,
-    "chg90": -8.0
+    "last": 103.87,
+    "chg30": 25.9,
+    "chg90": -4.4
    },
    "wti": {
     "dates": [
-     "2026-03-18",
      "2026-03-19",
      "2026-03-20",
      "2026-03-23",
@@ -2300,7 +2297,6 @@
      "2026-09-18"
     ],
     "vals": [
-     96.32,
      96.14,
      98.32,
      88.13,
@@ -2427,14 +2423,14 @@
      105.83,
      102.43,
      101.91,
-     95.47
+     100.3
     ],
-    "last": 95.47,
-    "chg30": 23.5,
-    "chg90": -0.9
+    "last": 100.3,
+    "chg30": 29.8,
+    "chg90": 4.3
    },
    "stale": false,
-   "spread": 3.3
+   "spread": 3.57
   },
   "extra": {
    "vix": {
@@ -2481,7 +2477,7 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-09-19 12:05",
+    "asOf": "2026-09-19 22:42",
     "url": "https://polymarket.com/zh/event/fed-decision-in-september-762",
     "cut50": 0.0,
     "cut25": 0.0,
@@ -2983,7 +2979,7 @@
      16.8,
      13.1,
      27.0,
-     -112.3,
+     -112.2,
      59.6,
      31.9,
      46.9,
@@ -3027,8 +3023,8 @@
      19,
      26,
      27,
-     23,
-     25,
+     24,
+     26,
      21,
      25,
      26,
@@ -3055,7 +3051,7 @@
      },
      {
       "year": "2026",
-      "net": 134.7,
+      "net": 134.8,
       "from": "2026-01",
       "to": "2026-07"
      }
@@ -3216,11 +3212,11 @@
     {
      "name": "油价传导",
      "nameEn": "Oil→CPI transmission",
-     "score": -98,
+     "score": -100,
      "dir": "利空",
      "dirEn": "bearish",
-     "reason": "布伦特 30 日 +19.7%（90 日 -8.0%）至 $98.77：短期方向主导——油价→CPI→利率压力",
-     "reasonEn": "Brent +19.7% over 30d (-8.0% over 90d) to $98.77: the 30d direction dominates — oil→CPI→rates pressure",
+     "reason": "布伦特 30 日 +25.9%（90 日 -4.4%）至 $103.87：短期方向主导——油价→CPI→利率压力",
+     "reasonEn": "Brent +25.9% over 30d (-4.4% over 90d) to $103.87: the 30d direction dominates — oil→CPI→rates pressure",
      "win": "30日",
      "winEn": "30d"
     },
@@ -3452,7 +3448,7 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-09-19 12:05",
+    "asOf": "2026-09-19 22:42",
     "url": "https://polymarket.com/zh/event/fed-decision-in-september-762",
     "cut50": 0.0,
     "cut25": 0.0,
