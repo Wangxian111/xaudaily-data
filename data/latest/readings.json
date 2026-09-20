@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-09-20 06:30 JST",
- "data_asof": "2026-09-20 06:30",
+ "generated_at": "2026-09-20 22:42 JST",
+ "data_asof": "2026-09-20 22:40",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -16,7 +16,9 @@
   "extra.vix": "指数",
   "extra.spdr": "吨（SPDR 黄金 ETF 持仓）",
   "extra.fedRate.value": "%（联邦基金利率目标上限）",
-  "extra.polymarket": "0~1 的隐含概率（Polymarket 决议定价）",
+  "extra.polymarket": "0~1 的隐含概率（Polymarket 下一次未结算决议的定价）",
+  "extra.debt.debtPctGdp": "%（联邦债务/GDP，季度）",
+  "extra.debt.netInterest": "十亿美元（年化，FRED 原序列值；季度见 netInterestQ）",
   "extra.cbFlow": "吨（IMF 报告国口径的央行净购金）"
  },
  "site": {
@@ -33,7 +35,7 @@
    "label": "COMEX GC 连续",
    "unit": "美元/盎司",
    "source": "AKShare·新浪全球期货外盘（复用 GodInformation 采集链路）",
-   "asOf": "2026-09-19",
+   "asOf": "2026-09-18",
    "rows": [
     {
      "d": "2026-04-06",
@@ -1905,7 +1907,6 @@
    "asOf": "2026-09-18",
    "brent": {
     "dates": [
-     "2026-03-19",
      "2026-03-20",
      "2026-03-23",
      "2026-03-24",
@@ -2034,7 +2035,6 @@
      "2026-09-18"
     ],
     "vals": [
-     108.65,
      112.19,
      99.94,
      104.49,
@@ -2160,15 +2160,14 @@
      108.75,
      105.83,
      104.82,
-     103.87
+     99.29
     ],
-    "last": 103.87,
-    "chg30": 25.9,
-    "chg90": -4.4
+    "last": 99.29,
+    "chg30": 20.4,
+    "chg90": -11.5
    },
    "wti": {
     "dates": [
-     "2026-03-19",
      "2026-03-20",
      "2026-03-23",
      "2026-03-24",
@@ -2297,7 +2296,6 @@
      "2026-09-18"
     ],
     "vals": [
-     96.14,
      98.32,
      88.13,
      92.35,
@@ -2423,14 +2421,14 @@
      105.83,
      102.43,
      101.91,
-     100.3
+     96.08
     ],
-    "last": 100.3,
-    "chg30": 29.8,
-    "chg90": 4.3
+    "last": 96.08,
+    "chg30": 24.3,
+    "chg90": -2.3
    },
    "stale": false,
-   "spread": 3.57
+   "spread": 3.21
   },
   "extra": {
    "vix": {
@@ -2477,13 +2475,17 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-09-20 00:35",
-    "url": "https://polymarket.com/zh/event/fed-decision-in-september-762",
-    "cut50": 0.0,
-    "cut25": 0.0,
-    "hold": 0.0,
-    "hike25": 1.0,
-    "hike50": 0.0
+    "asOf": "2026-09-20 22:42",
+    "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
+    "slug": "fed-decision-in-october-20260617190323537",
+    "meeting": "Fed Decision in October?",
+    "meetingDate": "2026-10-28",
+    "closed": false,
+    "cut50": 0.0035,
+    "cut25": 0.0055,
+    "hold": 0.435,
+    "hike25": 0.555,
+    "hike50": 0.0085
    },
    "adp": {
     "source": "TradingEconomics（ADP 就业变动）",
@@ -3146,8 +3148,10 @@
     "asOf": "2026-01-01",
     "debtPctGdp": 122.6,
     "debtPctGdpYoY": 2.0,
+    "debtQ": "2026-Q1",
     "netInterest": 1247.0,
     "netInterestYoY": 86.1,
+    "netInterestQ": "2026-Q2",
     "qAsOf": "2026-Q1"
    },
    "nfpTracker": {
@@ -3215,21 +3219,10 @@
      "score": -100,
      "dir": "利空",
      "dirEn": "bearish",
-     "reason": "布伦特 30 日 +25.9%（90 日 -4.4%）至 $103.87：短期方向主导——油价→CPI→利率压力",
-     "reasonEn": "Brent +25.9% over 30d (-4.4% over 90d) to $103.87: the 30d direction dominates — oil→CPI→rates pressure",
+     "reason": "布伦特 30 日 +20.4%（90 日 -11.5%）至 $99.29：短期方向主导——油价→CPI→利率压力",
+     "reasonEn": "Brent +20.4% over 30d (-11.5% over 90d) to $99.29: the 30d direction dominates — oil→CPI→rates pressure",
      "win": "30日",
      "winEn": "30d"
-    },
-    {
-     "name": "政策定价",
-     "nameEn": "Policy pricing",
-     "score": -60,
-     "dir": "利空",
-     "dirEn": "bearish",
-     "reason": "Polymarket 加息概率 100.0%：紧缩定价利空",
-     "reasonEn": "Polymarket hike odds 100.0%: hawkish pricing is bearish",
-     "win": "9月FOMC",
-     "winEn": "Sep FOMC"
     },
     {
      "name": "美元指数",
@@ -3259,10 +3252,21 @@
      "score": 39,
      "dir": "利多",
      "dirEn": "bullish",
-     "reason": "联邦债务/GDP 122.6%（2026-Q1，同比 +2.0pp），净利息支出年化 12 千亿美元：高债务+高利息挤压政策空间，财政主导与货币贬值担忧=黄金结构性利多",
-     "reasonEn": "Federal debt at 122.6% of GDP (2026-Q1, +2.0pp y/y), net interest outlays $1247B annualised: high debt and interest costs squeeze policy room — fiscal-dominance and debasement concerns are structurally bullish for gold",
+     "reason": "联邦债务/GDP 122.6%（2026-Q1，同比 +2.0pp），净利息支出年化 12470 亿美元（2026-Q2）：高债务+高利息挤压政策空间，财政主导与货币贬值担忧=黄金结构性利多",
+     "reasonEn": "Federal debt at 122.6% of GDP (2026-Q1, +2.0pp y/y), net interest outlays $1247B annualised (2026-Q2): high debt and interest costs squeeze policy room — fiscal-dominance and debasement concerns are structurally bullish for gold",
      "win": "结构",
      "winEn": "structural"
+    },
+    {
+     "name": "政策定价",
+     "nameEn": "Policy pricing",
+     "score": -8,
+     "dir": "中性",
+     "dirEn": "neutral",
+     "reason": "Polymarket 加息概率 56.4%：紧缩定价利空",
+     "reasonEn": "Polymarket hike odds 56.4%: hawkish pricing is bearish",
+     "win": "9月FOMC",
+     "winEn": "Sep FOMC"
     },
     {
      "name": "避险情绪",
@@ -3300,22 +3304,45 @@
    ],
    "events": [
     {
+     "date": "2026-10-14（预计）",
+     "dateEn": "2026-10-14 (est.)",
+     "title": "9 月 CPI 发布",
+     "titleEn": "September CPI release",
+     "est": "3.39%（区间 3.2–3.6%）",
+     "estEn": "3.39% (range 3.2–3.6%)",
+     "prob": "≤3.2%：15% · 3.2–3.6%：73% · ≥3.6%：12%",
+     "probEn": "≤3.2%: 15% · 3.2–3.6%: 73% · ≥3.6%: 12%",
+     "reasons": [
+      "布伦特近 30 日 +20.4% / 90 日 -11.5%：能源分项（权重≈6.5%）贡献约 +0.08pp",
+      "近两月 CPI 动能 -0.05pp/月（3.5→3.4→3.4），回落延续但减速，衰减系数 0.6",
+      "核心 PCE 3.38% 仍高于 2%：租金/服务粘性支撑核心分项",
+      "ADP 仅 +3.8 万、密歇根信心 47.8：需求走弱压制服务通胀"
+     ],
+     "reasonsEn": [
+      "Brent +20.4% (30d) / -11.5% (90d): energy component (weight ≈6.5%) contributes ≈+0.08pp",
+      "CPI momentum -0.05pp/m over 2m (3.5→3.4→3.4): disinflation continues but decelerates (decay 0.6)",
+      "Core PCE 3.38% still above 2%: rent/services stickiness supports the core",
+      "ADP just +38k and U-Mich confidence 47.8: weak demand caps services inflation"
+     ],
+     "kind": "cpi"
+    },
+    {
      "date": "2026-10-29 · FOMC",
      "dateEn": "2026-10-29 · FOMC",
      "title": "利率决议",
      "titleEn": "FOMC rate decision",
      "est": "基准利率维持 4.00%",
      "estEn": "hold at 4.00%",
-     "prob": "加息 100.0% · 不变 0.0% · 降息 0.0%（市场定价）",
-     "probEn": "hike 100.0% · hold 0.0% · cut 0.0% (market pricing)",
+     "prob": "加息 56.4% · 不变 43.5% · 降息 0.9%（Polymarket 市场定价 · 2026-10-28 决议）",
+     "probEn": "hike 56.4% · hold 43.5% · cut 0.9% (Polymarket market pricing · 2026-10-28 meeting)",
      "reasons": [
-      "Polymarket 定价：加息 100.0% / 不变 0.0% / 降息 0.0%",
+      "Polymarket 市场定价 · 2026-10-28 决议：加息 56.4% / 不变 43.5% / 降息 0.9%",
       "核心 PCE 连续回升至 3.38%，通胀约束支持紧缩",
       "但就业走弱（8 月 +16.2 万，7 月初值 −2.3 万）与 Q2 GDP 2.1% 使紧缩代价高",
       "11/3 中期选举前政治上难以承受紧缩冲击 → AI 较市场更倾向按兵不动"
      ],
      "reasonsEn": [
-      "Polymarket pricing: hike 100.0% / hold 0.0% / cut 0.0%",
+      "Polymarket market pricing · 2026-10-28 meeting: hike 56.4% / hold 43.5% / cut 0.9%",
       "Core PCE back up to 3.38%: inflation constraint favors tightening",
       "But weak jobs (Aug +162k; July initial −23k) and Q2 GDP 2.1% make tightening costly",
       "Politically hard to tighten before the 11/3 midterms → AI leans hold vs the market"
@@ -3355,11 +3382,11 @@
      "prob": "上修 30% · 维持 50% · 下修 20%",
      "probEn": "upward 30% · unchanged 50% · downward 20%",
      "reasons": [
-      "初值口径下实际活动走弱信号（密歇根 51.7、ADP 偏弱）偏向微幅下修",
+      "初值口径下实际活动走弱信号（密歇根 47.8、ADP 偏弱）偏向微幅下修",
       "核心 PCE 若继续回升（3.38%→?），12 月决议方向由它决定"
      ],
      "reasonsEn": [
-      "Weak real-activity signals vs initial print (U-Mich 51.7, soft ADP) tilt slightly downward",
+      "Weak real-activity signals vs initial print (U-Mich 47.8, soft ADP) tilt slightly downward",
       "If core PCE keeps rising (3.38%→?), it decides the December meeting"
      ],
      "kind": "gdp"
@@ -3386,15 +3413,15 @@
      "dateEn": "2026-12-08/09 · FOMC",
      "title": "年末决议",
      "titleEn": "Year-end FOMC decision",
-     "est": "若 9 月按兵不动，这是年内最后一次行动窗口",
-     "estEn": "If September is a hold, this is the last window of the year",
+     "est": "年内最后一次行动窗口",
+     "estEn": "The last action window of the year",
      "prob": null,
      "probEn": null,
      "reasons": [
-      "取决于 9/11 CPI 与 9/30 PCE 路径：核心 PCE 回落则保留降息想象，回升则紧缩延续"
+      "取决于 9/30 PCE 路径：核心 PCE 回落则保留降息想象，回升则紧缩延续"
      ],
      "reasonsEn": [
-      "Depends on the 9/11 CPI and 9/30 PCE path: falling core PCE keeps cuts on the table; rising PCE extends tightening"
+      "Depends on the 9/30 PCE path: falling core PCE keeps cuts on the table; rising PCE extends tightening"
      ],
      "kind": "fomc"
     }
@@ -3448,13 +3475,17 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-09-20 00:35",
-    "url": "https://polymarket.com/zh/event/fed-decision-in-september-762",
-    "cut50": 0.0,
-    "cut25": 0.0,
-    "hold": 0.0,
-    "hike25": 1.0,
-    "hike50": 0.0
+    "asOf": "2026-09-20 22:42",
+    "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
+    "slug": "fed-decision-in-october-20260617190323537",
+    "meeting": "Fed Decision in October?",
+    "meetingDate": "2026-10-28",
+    "closed": false,
+    "cut50": 0.0035,
+    "cut25": 0.0055,
+    "hold": 0.435,
+    "hike25": 0.555,
+    "hike50": 0.0085
    }
   }
  }
