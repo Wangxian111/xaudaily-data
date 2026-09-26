@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-09-26 06:30 JST",
- "data_asof": "2026-09-26 06:30",
+ "generated_at": "2026-09-26 22:13 JST",
+ "data_asof": "2026-09-26 22:13",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -35,7 +35,7 @@
    "label": "COMEX GC 连续",
    "unit": "美元/盎司",
    "source": "AKShare·新浪全球期货外盘（复用 GodInformation 采集链路）",
-   "asOf": "2026-09-25",
+   "asOf": "2026-09-26",
    "rows": [
     {
      "d": "2026-04-13",
