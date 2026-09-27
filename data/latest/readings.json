@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-09-27 22:42 JST",
- "data_asof": "2026-09-27 22:40",
+ "generated_at": "2026-09-28 06:31 JST",
+ "data_asof": "2026-09-28 06:30",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -23,7 +23,7 @@
  },
  "site": {
   "home": "https://xaudaily.com/",
-  "daily_archive": "https://xaudaily.com/d/2026-09-27.html",
+  "daily_archive": "https://xaudaily.com/d/2026-09-28.html",
   "archive_index": "https://xaudaily.com/d/",
   "brief_md": "https://xaudaily.com/brief.md",
   "llms_txt": "https://xaudaily.com/llms.txt",
@@ -1078,9 +1078,8 @@
   },
   "dxy": {
    "source": "GodInformation data/dxy.csv（新浪积累）",
-   "asOf": "2026-09-26",
+   "asOf": "2026-09-28",
    "dates": [
-    "2026-05-26",
     "2026-05-27",
     "2026-05-28",
     "2026-05-29",
@@ -1169,10 +1168,10 @@
     "2026-09-23",
     "2026-09-24",
     "2026-09-25",
-    "2026-09-26"
+    "2026-09-26",
+    "2026-09-28"
    ],
    "vals": [
-    99.15,
     99.23,
     99.01,
     98.93,
@@ -1261,7 +1260,8 @@
     100.55,
     101.111,
     101.309,
-    101.034
+    101.034,
+    101.081
    ]
   },
   "gdp": {
@@ -2474,7 +2474,7 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-09-27 22:42",
+    "asOf": "2026-09-28 06:30",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
@@ -2822,7 +2822,7 @@
    },
    "cbGold": {
     "source": "Wikipedia·Gold reserve（转引 World Gold Council/IMF IFS）",
-    "asOf": "2026-09-27",
+    "asOf": "2026-09-28",
     "trackerFrom": "2026-01",
     "rows": [
      {
@@ -2919,7 +2919,7 @@
    },
    "cbFlow": {
     "source": "IMF IRFCL·官方 SDMX API（官方储备黄金持仓 FTO 口径）",
-    "asOf": "2026-09-27",
+    "asOf": "2026-09-28",
     "firstMonth": "2023-01",
     "lastMonth": "2026-07",
     "months": [
@@ -3181,7 +3181,7 @@
    },
    "nfpTracker": {
     "source": "自建存档 nfp_tracker.json + 东方财富",
-    "asOf": "2026-09-27",
+    "asOf": "2026-09-28",
     "detail": [
      {
       "month": "2026-03",
@@ -3241,11 +3241,11 @@
     {
      "name": "美元指数",
      "nameEn": "US Dollar Index (DXY)",
-     "score": -76,
+     "score": -67,
      "dir": "利空",
      "dirEn": "bearish",
-     "reason": "DXY 20 日 +1.62% 至 101.034：美元走强利空黄金",
-     "reasonEn": "DXY +1.62% over 20d to 101.034: stronger dollar weighs on gold",
+     "reason": "DXY 20 日 +1.43% 至 101.081：美元走强利空黄金",
+     "reasonEn": "DXY +1.43% over 20d to 101.081: stronger dollar weighs on gold",
      "win": "20日",
      "winEn": "20d"
     },
@@ -3500,7 +3500,7 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-09-27 22:42",
+    "asOf": "2026-09-28 06:30",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
