@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-10-03 06:31 JST",
- "data_asof": "2026-10-03 06:30",
+ "generated_at": "2026-10-03 22:41 JST",
+ "data_asof": "2026-10-03 22:40",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -1906,7 +1906,6 @@
    "asOf": "2026-10-02",
    "brent": {
     "dates": [
-     "2026-04-02",
      "2026-04-06",
      "2026-04-07",
      "2026-04-08",
@@ -2035,7 +2034,6 @@
      "2026-10-02"
     ],
     "vals": [
-     109.03,
      109.77,
      109.27,
      94.75,
@@ -2161,15 +2159,14 @@
      102.59,
      103.53,
      102.31,
-     102.7
+     102.25
     ],
-    "last": 102.7,
-    "chg30": 9.5,
-    "chg90": -5.8
+    "last": 102.25,
+    "chg30": 9.0,
+    "chg90": -6.9
    },
    "wti": {
     "dates": [
-     "2026-04-02",
      "2026-04-06",
      "2026-04-07",
      "2026-04-08",
@@ -2298,7 +2295,6 @@
      "2026-10-02"
     ],
     "vals": [
-     111.54,
      112.41,
      112.95,
      94.41,
@@ -2424,14 +2420,14 @@
      89.38,
      90.42,
      92.87,
-     91.26
+     91.11
     ],
-    "last": 91.26,
-    "chg30": 3.9,
-    "chg90": -18.2
+    "last": 91.11,
+    "chg30": 3.7,
+    "chg90": -18.9
    },
    "stale": false,
-   "spread": 11.44
+   "spread": 11.14
   },
   "extra": {
    "vix": {
@@ -2478,7 +2474,7 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-03 06:31",
+    "asOf": "2026-10-03 22:41",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
@@ -3257,11 +3253,11 @@
     {
      "name": "油价传导",
      "nameEn": "Oil→CPI transmission",
-     "score": -48,
+     "score": -45,
      "dir": "利空",
      "dirEn": "bearish",
-     "reason": "布伦特 30 日 +9.5%（90 日 -5.8%）至 $102.7：短期方向主导——油价→CPI→利率压力",
-     "reasonEn": "Brent +9.5% over 30d (-5.8% over 90d) to $102.7: the 30d direction dominates — oil→CPI→rates pressure",
+     "reason": "布伦特 30 日 +9.0%（90 日 -6.9%）至 $102.25：短期方向主导——油价→CPI→利率压力",
+     "reasonEn": "Brent +9.0% over 30d (-6.9% over 90d) to $102.25: the 30d direction dominates — oil→CPI→rates pressure",
      "win": "30日",
      "winEn": "30d"
     },
@@ -3338,18 +3334,18 @@
      "dateEn": "2026-10-14 (est.)",
      "title": "9 月 CPI 发布",
      "titleEn": "September CPI release",
-     "est": "3.37%（区间 3.2–3.6%）",
-     "estEn": "3.37% (range 3.2–3.6%)",
-     "prob": "≤3.2%：17% · 3.2–3.6%：73% · ≥3.6%：10%",
-     "probEn": "≤3.2%: 17% · 3.2–3.6%: 73% · ≥3.6%: 10%",
+     "est": "3.31%（区间 3.1–3.5%）",
+     "estEn": "3.31% (range 3.1–3.5%)",
+     "prob": "≤3.1%：12% · 3.1–3.5%：73% · ≥3.5%：15%",
+     "probEn": "≤3.1%: 12% · 3.1–3.5%: 73% · ≥3.5%: 15%",
      "reasons": [
-      "布伦特近 30 日 +9.5% / 90 日 -5.8%：能源分项（权重≈6.5%）贡献约 +0.02pp",
+      "布伦特近 30 日 +9.0% / 90 日 -6.9%：能源分项（权重≈6.5%）贡献约 -0.04pp",
       "近两月 CPI 动能 -0.05pp/月（3.5→3.4→3.4），回落延续但减速，衰减系数 0.6",
       "核心 PCE 3.1% 仍高于 2%：租金/服务粘性支撑核心分项",
       "ADP 仅 +9.0 万、密歇根信心 48.1：需求走弱压制服务通胀"
      ],
      "reasonsEn": [
-      "Brent +9.5% (30d) / -5.8% (90d): energy component (weight ≈6.5%) contributes ≈+0.02pp",
+      "Brent +9.0% (30d) / -6.9% (90d): energy component (weight ≈6.5%) contributes ≈-0.04pp",
       "CPI momentum -0.05pp/m over 2m (3.5→3.4→3.4): disinflation continues but decelerates (decay 0.6)",
       "Core PCE 3.1% still above 2%: rent/services stickiness supports the core",
       "ADP just +90k and U-Mich confidence 48.1: weak demand caps services inflation"
@@ -3463,7 +3459,7 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-03 06:31",
+    "asOf": "2026-10-03 22:41",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
