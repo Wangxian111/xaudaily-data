@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-10-03 22:41 JST",
- "data_asof": "2026-10-03 22:40",
+ "generated_at": "2026-10-04 06:31 JST",
+ "data_asof": "2026-10-04 06:30",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -23,7 +23,7 @@
  },
  "site": {
   "home": "https://xaudaily.com/",
-  "daily_archive": "https://xaudaily.com/d/2026-10-03.html",
+  "daily_archive": "https://xaudaily.com/d/2026-10-04.html",
   "archive_index": "https://xaudaily.com/d/",
   "brief_md": "https://xaudaily.com/brief.md",
   "llms_txt": "https://xaudaily.com/llms.txt",
@@ -2436,9 +2436,9 @@
     "source": "Yahoo ^VIX（经本机代理，与利率/油价同源）"
    },
    "spdr": {
-    "value": 1056.6,
-    "changePct": 0.08,
-    "date": "2026-10-01",
+    "value": 1055.7,
+    "changePct": -0.08,
+    "date": "2026-10-02",
     "source": "AKShare·macro_cons_gold"
    },
    "fedRate": {
@@ -2474,7 +2474,7 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-03 22:41",
+    "asOf": "2026-10-04 06:30",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
@@ -2820,7 +2820,7 @@
    },
    "cbGold": {
     "source": "Wikipedia·Gold reserve（转引 World Gold Council/IMF IFS）",
-    "asOf": "2026-10-03",
+    "asOf": "2026-10-04",
     "trackerFrom": "2026-01",
     "rows": [
      {
@@ -2917,7 +2917,7 @@
    },
    "cbFlow": {
     "source": "IMF IRFCL·官方 SDMX API（官方储备黄金持仓 FTO 口径）",
-    "asOf": "2026-10-03",
+    "asOf": "2026-10-04",
     "firstMonth": "2023-01",
     "lastMonth": "2026-08",
     "months": [
@@ -3182,7 +3182,7 @@
    },
    "nfpTracker": {
     "source": "自建存档 nfp_tracker.json + 东方财富",
-    "asOf": "2026-10-03",
+    "asOf": "2026-10-04",
     "detail": [
      {
       "month": "2026-04",
@@ -3319,11 +3319,11 @@
     {
      "name": "ETF 持仓",
      "nameEn": "ETF holdings (SPDR)",
-     "score": 1,
+     "score": -1,
      "dir": "中性",
      "dirEn": "neutral",
-     "reason": "SPDR 持仓 +0.08%（2026-10-01）",
-     "reasonEn": "SPDR holdings +0.08% (2026-10-01)",
+     "reason": "SPDR 持仓 -0.08%（2026-10-02）",
+     "reasonEn": "SPDR holdings -0.08% (2026-10-02)",
      "win": "1日",
      "winEn": "1d"
     }
@@ -3459,7 +3459,7 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-03 22:41",
+    "asOf": "2026-10-04 06:30",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
