@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-10-04 06:31 JST",
- "data_asof": "2026-10-04 06:30",
+ "generated_at": "2026-10-04 22:43 JST",
+ "data_asof": "2026-10-04 22:43",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -35,7 +35,7 @@
    "label": "COMEX GC 连续",
    "unit": "美元/盎司",
    "source": "AKShare·新浪全球期货外盘（复用 GodInformation 采集链路）",
-   "asOf": "2026-10-02",
+   "asOf": "2026-10-03",
    "rows": [
     {
      "d": "2026-04-20",
@@ -2474,7 +2474,7 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-04 06:30",
+    "asOf": "2026-10-04 22:41",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
@@ -2483,7 +2483,7 @@
     "cut50": 0.0025,
     "cut25": 0.0045,
     "hold": 0.825,
-    "hike25": 0.175,
+    "hike25": 0.165,
     "hike50": 0.0045
    },
    "adp": {
@@ -3289,8 +3289,8 @@
      "score": 26,
      "dir": "利多",
      "dirEn": "bullish",
-     "reason": "Polymarket 加息 17.9%/降息 0.7%：紧缩预期未主导",
-     "reasonEn": "Polymarket hike 17.9%/cut 0.7%: tightening not dominant",
+     "reason": "Polymarket 加息 17.0%/降息 0.7%：紧缩预期未主导",
+     "reasonEn": "Polymarket hike 17.0%/cut 0.7%: tightening not dominant",
      "win": "9月FOMC",
      "winEn": "Sep FOMC"
     },
@@ -3359,16 +3359,16 @@
      "titleEn": "FOMC rate decision",
      "est": "基准利率维持 4.00%",
      "estEn": "hold at 4.00%",
-     "prob": "加息 17.9% · 不变 82.5% · 降息 0.7%（Polymarket 市场定价 · 2026-10-29 决议）",
-     "probEn": "hike 17.9% · hold 82.5% · cut 0.7% (Polymarket market pricing · 2026-10-29 meeting)",
+     "prob": "加息 17.0% · 不变 82.5% · 降息 0.7%（Polymarket 市场定价 · 2026-10-29 决议）",
+     "probEn": "hike 17.0% · hold 82.5% · cut 0.7% (Polymarket market pricing · 2026-10-29 meeting)",
      "reasons": [
-      "Polymarket 市场定价 · 2026-10-29 决议：加息 17.9% / 不变 82.5% / 降息 0.7%",
+      "Polymarket 市场定价 · 2026-10-29 决议：加息 17.0% / 不变 82.5% / 降息 0.7%",
       "核心 PCE 连续回升至 3.1%，通胀约束支持紧缩",
       "但就业走弱（8 月 +2.9 万，7 月初值 −2.3 万）与 Q2 GDP 2.5% 使紧缩代价高",
       "11/3 中期选举前政治上难以承受紧缩冲击 → AI 较市场更倾向按兵不动"
      ],
      "reasonsEn": [
-      "Polymarket market pricing · 2026-10-29 meeting: hike 17.9% / hold 82.5% / cut 0.7%",
+      "Polymarket market pricing · 2026-10-29 meeting: hike 17.0% / hold 82.5% / cut 0.7%",
       "Core PCE back up to 3.1%: inflation constraint favors tightening",
       "But weak jobs (Aug +29k; July initial −23k) and Q2 GDP 2.5% make tightening costly",
       "Politically hard to tighten before the 11/3 midterms → AI leans hold vs the market"
@@ -3459,7 +3459,7 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-04 06:30",
+    "asOf": "2026-10-04 22:41",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
@@ -3468,7 +3468,7 @@
     "cut50": 0.0025,
     "cut25": 0.0045,
     "hold": 0.825,
-    "hike25": 0.175,
+    "hike25": 0.165,
     "hike50": 0.0045
    }
   }
