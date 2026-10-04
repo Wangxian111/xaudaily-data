@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-10-04 22:43 JST",
- "data_asof": "2026-10-04 22:43",
+ "generated_at": "2026-10-05 06:31 JST",
+ "data_asof": "2026-10-05 06:30",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -23,7 +23,7 @@
  },
  "site": {
   "home": "https://xaudaily.com/",
-  "daily_archive": "https://xaudaily.com/d/2026-10-04.html",
+  "daily_archive": "https://xaudaily.com/d/2026-10-05.html",
   "archive_index": "https://xaudaily.com/d/",
   "brief_md": "https://xaudaily.com/brief.md",
   "llms_txt": "https://xaudaily.com/llms.txt",
@@ -35,7 +35,7 @@
    "label": "COMEX GC 连续",
    "unit": "美元/盎司",
    "source": "AKShare·新浪全球期货外盘（复用 GodInformation 采集链路）",
-   "asOf": "2026-10-03",
+   "asOf": "2026-10-02",
    "rows": [
     {
      "d": "2026-04-20",
@@ -1078,9 +1078,8 @@
   },
   "dxy": {
    "source": "GodInformation data/dxy.csv（新浪积累）",
-   "asOf": "2026-10-03",
+   "asOf": "2026-10-05",
    "dates": [
-    "2026-06-02",
     "2026-06-03",
     "2026-06-04",
     "2026-06-05",
@@ -1169,10 +1168,10 @@
     "2026-09-30",
     "2026-10-01",
     "2026-10-02",
-    "2026-10-03"
+    "2026-10-03",
+    "2026-10-05"
    ],
    "vals": [
-    99.22,
     99.53,
     99.44,
     100.07,
@@ -1261,7 +1260,8 @@
     101.382,
     101.454,
     102.001,
-    101.93
+    101.93,
+    101.898
    ]
   },
   "gdp": {
@@ -2474,7 +2474,7 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-04 22:41",
+    "asOf": "2026-10-05 06:30",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
@@ -2820,7 +2820,7 @@
    },
    "cbGold": {
     "source": "Wikipedia·Gold reserve（转引 World Gold Council/IMF IFS）",
-    "asOf": "2026-10-04",
+    "asOf": "2026-10-05",
     "trackerFrom": "2026-01",
     "rows": [
      {
@@ -2917,7 +2917,7 @@
    },
    "cbFlow": {
     "source": "IMF IRFCL·官方 SDMX API（官方储备黄金持仓 FTO 口径）",
-    "asOf": "2026-10-04",
+    "asOf": "2026-10-05",
     "firstMonth": "2023-01",
     "lastMonth": "2026-08",
     "months": [
@@ -3182,7 +3182,7 @@
    },
    "nfpTracker": {
     "source": "自建存档 nfp_tracker.json + 东方财富",
-    "asOf": "2026-10-04",
+    "asOf": "2026-10-05",
     "detail": [
      {
       "month": "2026-04",
@@ -3245,8 +3245,8 @@
      "score": -100,
      "dir": "利空",
      "dirEn": "bearish",
-     "reason": "DXY 20 日 +3.04% 至 101.93：美元走强利空黄金",
-     "reasonEn": "DXY +3.04% over 20d to 101.93: stronger dollar weighs on gold",
+     "reason": "DXY 20 日 +3.06% 至 101.898：美元走强利空黄金",
+     "reasonEn": "DXY +3.06% over 20d to 101.898: stronger dollar weighs on gold",
      "win": "20日",
      "winEn": "20d"
     },
@@ -3459,7 +3459,7 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-04 22:41",
+    "asOf": "2026-10-05 06:30",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
