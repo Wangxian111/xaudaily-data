@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-10-10 06:31 JST",
- "data_asof": "2026-10-10 06:30",
+ "generated_at": "2026-10-10 22:43 JST",
+ "data_asof": "2026-10-10 22:43",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -35,7 +35,7 @@
    "label": "COMEX GC 连续",
    "unit": "美元/盎司",
    "source": "AKShare·新浪全球期货外盘（复用 GodInformation 采集链路）",
-   "asOf": "2026-10-09",
+   "asOf": "2026-10-10",
    "rows": [
     {
      "d": "2026-04-27",
@@ -1907,7 +1907,6 @@
    "asOf": "2026-10-09",
    "brent": {
     "dates": [
-     "2026-04-09",
      "2026-04-10",
      "2026-04-13",
      "2026-04-14",
@@ -2037,7 +2036,6 @@
      "2026-10-09"
     ],
     "vals": [
-     95.92,
      95.2,
      99.36,
      94.79,
@@ -2164,15 +2162,14 @@
      100.58,
      100.2,
      104.28,
-     104.43
+     104.72
     ],
-    "last": 104.43,
-    "chg30": 16.4,
-    "chg90": 8.9
+    "last": 104.72,
+    "chg30": 16.7,
+    "chg90": 10.0
    },
    "wti": {
     "dates": [
-     "2026-04-09",
      "2026-04-10",
      "2026-04-13",
      "2026-04-14",
@@ -2302,7 +2299,6 @@
      "2026-10-09"
     ],
     "vals": [
-     97.87,
      96.57,
      99.08,
      91.28,
@@ -2429,14 +2425,14 @@
      89.44,
      88.28,
      91.49,
-     91.66
+     91.85
     ],
-    "last": 91.66,
-    "chg30": 9.7,
-    "chg90": -6.3
+    "last": 91.85,
+    "chg30": 10.0,
+    "chg90": -4.9
    },
    "stale": false,
-   "spread": 12.77
+   "spread": 12.87
   },
   "extra": {
    "vix": {
@@ -2483,7 +2479,7 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-10 06:31",
+    "asOf": "2026-10-10 22:41",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
@@ -3219,47 +3215,47 @@
     "series": {
      "gold.px": {
       "asOf": "2026-10-09",
-      "value": 4220.2998046875,
-      "from": "2006-10-09",
-      "n": 5032,
+      "value": 4216.2998046875,
+      "from": "2006-10-10",
+      "n": 5031,
       "pctile": 96.5,
-      "mean": 1643.532,
+      "mean": 1643.743,
       "min": 571.9000244140625,
       "max": 5318.39990234375,
-      "gapFromHigh": -1098.1,
-      "ddFromHighPct": -20.65,
-      "ret1yPct": 6.2,
-      "ret3yPct": 125.0,
-      "ret5yPct": 140.1,
-      "ret10yPct": 237.9
+      "gapFromHigh": -1102.1,
+      "ddFromHighPct": -20.72,
+      "ret1yPct": 6.1,
+      "ret3yPct": 124.8,
+      "ret5yPct": 139.9,
+      "ret10yPct": 237.6
      },
      "silver.px": {
       "asOf": "2026-10-09",
-      "value": 61.11000061035156,
-      "from": "2006-10-09",
-      "n": 5031,
-      "pctile": 96.6,
-      "mean": 23.611,
+      "value": 60.66999816894531,
+      "from": "2006-10-10",
+      "n": 5030,
+      "pctile": 96.5,
+      "mean": 23.613,
       "min": 8.789999961853027,
       "max": 115.08000183105469,
-      "gapFromHigh": -53.97,
-      "ddFromHighPct": -46.9,
-      "ret1yPct": 30.4,
-      "ret3yPct": 180.6,
-      "ret5yPct": 169.5,
-      "ret10yPct": 252.7
+      "gapFromHigh": -54.41,
+      "ddFromHighPct": -47.28,
+      "ret1yPct": 29.5,
+      "ret3yPct": 178.6,
+      "ret5yPct": 167.5,
+      "ret10yPct": 250.2
      },
      "dxy.px": {
       "asOf": "2026-10-09",
-      "value": 102.23100280761719,
-      "from": "2006-10-09",
-      "n": 5035,
+      "value": 102.20999908447266,
+      "from": "2006-10-10",
+      "n": 5034,
       "pctile": 87.1,
-      "mean": 90.896,
+      "mean": 90.897,
       "min": 71.33000183105469,
       "max": 114.11000061035156,
-      "gapFromHigh": -11.879,
-      "ddFromHighPct": -10.41,
+      "gapFromHigh": -11.9,
+      "ddFromHighPct": -10.43,
       "ret1yPct": 2.7,
       "ret3yPct": -3.4,
       "ret5yPct": 8.7,
@@ -3291,12 +3287,12 @@
     "ratio": {
      "goldSilver": {
       "asOf": "2026-10-09",
-      "value": 69.1,
-      "pctile": 43.2,
+      "value": 69.5,
+      "pctile": 44.3,
       "min": 32.0,
       "max": 125.9,
       "mean": 70.9,
-      "n": 5030
+      "n": 5029
      }
     },
     "realRate": {
@@ -3334,11 +3330,11 @@
     {
      "name": "油价传导",
      "nameEn": "Oil→CPI transmission",
-     "score": -82,
+     "score": -84,
      "dir": "利空",
      "dirEn": "bearish",
-     "reason": "布伦特 30 日 +16.4%（90 日 +8.9%）至 $104.43：短期方向主导——油价→CPI→利率压力",
-     "reasonEn": "Brent +16.4% over 30d (+8.9% over 90d) to $104.43: the 30d direction dominates — oil→CPI→rates pressure",
+     "reason": "布伦特 30 日 +16.7%（90 日 +10.0%）至 $104.72：短期方向主导——油价→CPI→利率压力",
+     "reasonEn": "Brent +16.7% over 30d (+10.0% over 90d) to $104.72: the 30d direction dominates — oil→CPI→rates pressure",
      "win": "30日",
      "winEn": "30d"
     },
@@ -3415,18 +3411,18 @@
      "dateEn": "2026-10-14 (est.)",
      "title": "9 月 CPI 发布",
      "titleEn": "September CPI release",
-     "est": "4.12%（区间 3.9–4.3%）",
-     "estEn": "4.12% (range 3.9–4.3%)",
-     "prob": "≤3.9%：11% · 3.9–4.3%：73% · ≥4.3%：16%",
-     "probEn": "≤3.9%: 11% · 3.9–4.3%: 73% · ≥4.3%: 16%",
+     "est": "4.17%（区间 4.0–4.4%）",
+     "estEn": "4.17% (range 4.0–4.4%)",
+     "prob": "≤4.0%：17% · 4.0–4.4%：73% · ≥4.4%：10%",
+     "probEn": "≤4.0%: 17% · 4.0–4.4%: 73% · ≥4.4%: 10%",
      "reasons": [
-      "布伦特近 30 日 +16.4% / 90 日 +8.9%：能源分项（权重≈6.5%）贡献约 +0.77pp",
+      "布伦特近 30 日 +16.7% / 90 日 +10.0%：能源分项（权重≈6.5%）贡献约 +0.82pp",
       "近两月 CPI 动能 -0.05pp/月（3.5→3.4→3.4），回落延续但减速，衰减系数 0.6",
       "核心 PCE 3.1% 仍高于 2%：租金/服务粘性支撑核心分项",
       "ADP 仅 +9.0 万、密歇根信心 46.3：需求走弱压制服务通胀"
      ],
      "reasonsEn": [
-      "Brent +16.4% (30d) / +8.9% (90d): energy component (weight ≈6.5%) contributes ≈+0.77pp",
+      "Brent +16.7% (30d) / +10.0% (90d): energy component (weight ≈6.5%) contributes ≈+0.82pp",
       "CPI momentum -0.05pp/m over 2m (3.5→3.4→3.4): disinflation continues but decelerates (decay 0.6)",
       "Core PCE 3.1% still above 2%: rent/services stickiness supports the core",
       "ADP just +90k and U-Mich confidence 46.3: weak demand caps services inflation"
@@ -3561,7 +3557,7 @@
      ],
      [
       "2026-10-10",
-      -82.0
+      -84.0
      ]
     ],
     "driver.Policy pricing": [
@@ -3794,7 +3790,7 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-10 06:31",
+    "asOf": "2026-10-10 22:41",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
