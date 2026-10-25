@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-10-25 06:30 JST",
- "data_asof": "2026-10-25 06:30",
+ "generated_at": "2026-10-25 22:43 JST",
+ "data_asof": "2026-10-25 22:43",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -36,7 +36,7 @@
    "label": "COMEX GC 连续",
    "unit": "美元/盎司",
    "source": "AKShare·新浪全球期货外盘（复用 GodInformation 采集链路）",
-   "asOf": "2026-10-23",
+   "asOf": "2026-10-24",
    "rows": [
     {
      "d": "2026-05-11",
@@ -1949,7 +1949,6 @@
    "asOf": "2026-10-23",
    "brent": {
     "dates": [
-     "2026-04-24",
      "2026-04-27",
      "2026-04-28",
      "2026-04-29",
@@ -2078,7 +2077,6 @@
      "2026-10-23"
     ],
     "vals": [
-     105.33,
      108.23,
      111.26,
      118.03,
@@ -2204,15 +2202,14 @@
      108.79,
      108.82,
      113.17,
-     116.72
+     111.7
     ],
-    "last": 116.72,
-    "chg30": 11.6,
-    "chg90": 10.8
+    "last": 111.7,
+    "chg30": 6.8,
+    "chg90": 3.2
    },
    "wti": {
     "dates": [
-     "2026-04-24",
      "2026-04-27",
      "2026-04-28",
      "2026-04-29",
@@ -2341,7 +2338,6 @@
      "2026-10-23"
     ],
     "vals": [
-     94.4,
      96.37,
      99.93,
      106.88,
@@ -2471,10 +2467,10 @@
     ],
     "last": 103.27,
     "chg30": 3.2,
-    "chg90": 9.4
+    "chg90": 7.2
    },
    "stale": false,
-   "spread": 13.45
+   "spread": 8.43
   },
   "extra": {
    "vix": {
@@ -2521,7 +2517,7 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-25 06:30",
+    "asOf": "2026-10-25 22:41",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
@@ -3284,11 +3280,11 @@
      "gold.px": {
       "asOf": "2026-10-23",
       "value": 4007.89990234375,
-      "from": "2006-10-24",
-      "n": 5031,
+      "from": "2006-10-25",
+      "n": 5030,
       "pctile": 95.0,
-      "mean": 1650.798,
-      "min": 584.4000244140625,
+      "mean": 1651.01,
+      "min": 587.5999755859375,
       "max": 5318.39990234375,
       "gapFromHigh": -1310.5,
       "ddFromHighPct": -24.64,
@@ -3299,27 +3295,27 @@
      },
      "silver.px": {
       "asOf": "2026-10-23",
-      "value": 53.71099853515625,
-      "from": "2006-10-24",
-      "n": 5030,
+      "value": 53.94900131225586,
+      "from": "2006-10-25",
+      "n": 5029,
       "pctile": 95.5,
-      "mean": 23.703,
+      "mean": 23.706,
       "min": 8.789999961853027,
       "max": 115.08000183105469,
-      "gapFromHigh": -61.369,
-      "ddFromHighPct": -53.33,
-      "ret1yPct": 10.8,
-      "ret3yPct": 133.7,
-      "ret5yPct": 119.9,
-      "ret10yPct": 207.8
+      "gapFromHigh": -61.131,
+      "ddFromHighPct": -53.12,
+      "ret1yPct": 11.3,
+      "ret3yPct": 134.8,
+      "ret5yPct": 120.8,
+      "ret10yPct": 209.2
      },
      "dxy.px": {
       "asOf": "2026-10-23",
       "value": 101.80999755859375,
-      "from": "2006-10-24",
-      "n": 5034,
+      "from": "2006-10-25",
+      "n": 5033,
       "pctile": 85.9,
-      "mean": 90.927,
+      "mean": 90.928,
       "min": 71.33000183105469,
       "max": 114.11000061035156,
       "gapFromHigh": -12.3,
@@ -3355,12 +3351,12 @@
     "ratio": {
      "goldSilver": {
       "asOf": "2026-10-23",
-      "value": 74.6,
-      "pctile": 56.4,
+      "value": 74.3,
+      "pctile": 55.5,
       "min": 32.0,
       "max": 125.9,
-      "mean": 70.9,
-      "n": 5029
+      "mean": 71.0,
+      "n": 5028
      }
     },
     "realRate": {
@@ -3396,17 +3392,6 @@
      "winEn": "20d"
     },
     {
-     "name": "油价传导",
-     "nameEn": "Oil→CPI transmission",
-     "score": -58,
-     "dir": "利空",
-     "dirEn": "bearish",
-     "reason": "布伦特 30 日 +11.6%（90 日 +10.8%）至 $116.72：短期方向主导——油价→CPI→利率压力",
-     "reasonEn": "Brent +11.6% over 30d (+10.8% over 90d) to $116.72: the 30d direction dominates — oil→CPI→rates pressure",
-     "win": "30日",
-     "winEn": "30d"
-    },
-    {
      "name": "央行购金",
      "nameEn": "Central-bank gold buying",
      "score": 45,
@@ -3438,6 +3423,17 @@
      "reasonEn": "Polymarket hike 5.8%/cut 0.2%: tightening not dominant",
      "win": "10 月FOMC",
      "winEn": "October FOMC"
+    },
+    {
+     "name": "油价传导",
+     "nameEn": "Oil→CPI transmission",
+     "score": -34,
+     "dir": "利空",
+     "dirEn": "bearish",
+     "reason": "布伦特 30 日 +6.8%（90 日 +3.2%）至 $111.7：短期方向主导——油价→CPI→利率压力",
+     "reasonEn": "Brent +6.8% over 30d (+3.2% over 90d) to $111.7: the 30d direction dominates — oil→CPI→rates pressure",
+     "win": "30日",
+     "winEn": "30d"
     },
     {
      "name": "美元指数",
@@ -3563,18 +3559,18 @@
      "dateEn": "2026-11-10 (est.)",
      "title": "10 月 CPI 发布",
      "titleEn": "October CPI release",
-     "est": "4.48%（区间 4.3–4.7%）",
-     "estEn": "4.48% (range 4.3–4.7%)",
-     "prob": "≤4.3%：16% · 4.3–4.7%：73% · ≥4.7%：11%",
-     "probEn": "≤4.3%: 16% · 4.3–4.7%: 73% · ≥4.7%: 11%",
+     "est": "4.06%（区间 3.9–4.3%）",
+     "estEn": "4.06% (range 3.9–4.3%)",
+     "prob": "≤3.9%：19% · 3.9–4.3%：72% · ≥4.3%：9%",
+     "probEn": "≤3.9%: 19% · 3.9–4.3%: 72% · ≥4.3%: 9%",
      "reasons": [
-      "布伦特近 30 日 +11.6% / 90 日 +10.8%：能源分项（权重≈6.5%）贡献约 +0.72pp",
+      "布伦特近 30 日 +6.8% / 90 日 +3.2%：能源分项（权重≈6.5%）贡献约 +0.30pp",
       "近两月 CPI 动能 +0.15pp/月（3.4→3.4→3.7），回落延续但减速，衰减系数 0.6",
       "核心 PCE 3.01% 仍高于 2%：租金/服务粘性支撑核心分项",
       "ADP 仅 +9.0 万、密歇根信心 48.0：需求走弱压制服务通胀"
      ],
      "reasonsEn": [
-      "Brent +11.6% (30d) / +10.8% (90d): energy component (weight ≈6.5%) contributes ≈+0.72pp",
+      "Brent +6.8% (30d) / +3.2% (90d): energy component (weight ≈6.5%) contributes ≈+0.30pp",
       "CPI momentum +0.15pp/m over 2m (3.4→3.4→3.7): disinflation continues but decelerates (decay 0.6)",
       "Core PCE 3.01% still above 2%: rent/services stickiness supports the core",
       "ADP just +90k and U-Mich confidence 48.0: weak demand caps services inflation"
@@ -3910,7 +3906,7 @@
      ],
      [
       "2026-10-25",
-      -58.0
+      -34.0
      ]
     ],
     "driver.Policy pricing": [
@@ -4743,7 +4739,7 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-25 06:30",
+    "asOf": "2026-10-25 22:41",
     "url": "https://polymarket.com/zh/event/fed-decision-in-october-20260617190323537",
     "slug": "fed-decision-in-october-20260617190323537",
     "meeting": "Fed Decision in October?",
