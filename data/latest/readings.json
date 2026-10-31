@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-10-31 22:43 JST",
- "data_asof": "2026-10-31 22:43",
+ "generated_at": "2026-11-01 06:31 JST",
+ "data_asof": "2026-11-01 06:30",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -24,7 +24,7 @@
  },
  "site": {
   "home": "https://xaudaily.com/",
-  "daily_archive": "https://xaudaily.com/d/2026-10-31.html",
+  "daily_archive": "https://xaudaily.com/d/2026-11-01.html",
   "archive_index": "https://xaudaily.com/d/",
   "brief_md": "https://xaudaily.com/brief.md",
   "llms_txt": "https://xaudaily.com/llms.txt",
@@ -36,7 +36,7 @@
    "label": "COMEX GC 连续",
    "unit": "美元/盎司",
    "source": "AKShare·新浪全球期货外盘（复用 GodInformation 采集链路）",
-   "asOf": "2026-10-31",
+   "asOf": "2026-10-30",
    "rows": [
     {
      "d": "2026-05-18",
@@ -2487,9 +2487,9 @@
     "source": "Yahoo ^VIX（经本机代理，与利率/油价同源）"
    },
    "spdr": {
-    "value": 1041.1,
-    "changePct": -0.22,
-    "date": "2026-10-29",
+    "value": 1041.7,
+    "changePct": 0.05,
+    "date": "2026-10-30",
     "source": "AKShare·macro_cons_gold"
    },
    "fedRate": {
@@ -2525,17 +2525,17 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-31 22:41",
+    "asOf": "2026-11-01 06:31",
     "url": "https://polymarket.com/zh/event/fed-decision-in-december-20260729232808632",
     "slug": "fed-decision-in-december-20260729232808632",
     "meeting": "Fed Decision in December?",
     "meetingDate": "2026-12-10",
     "closed": false,
-    "cut50": 0.004,
+    "cut50": 0.0035,
     "cut25": 0.0065,
     "hold": 0.275,
     "hike25": 0.705,
-    "hike50": 0.0165
+    "hike50": 0.0155
    },
    "adp": {
     "source": "Investing.com（ADP 官方报告，经本机代理）",
@@ -2873,7 +2873,7 @@
    },
    "cbGold": {
     "source": "Wikipedia·Gold reserve（转引 World Gold Council/IMF IFS）",
-    "asOf": "2026-10-31",
+    "asOf": "2026-11-01",
     "trackerFrom": "2026-01",
     "rows": [
      {
@@ -2915,7 +2915,7 @@
       "name": "China",
       "tonnes": 2409.6,
       "share": "9.5%",
-      "chg1m": 23.1,
+      "chg1m": 0.0,
       "chgSinceFirst": 111.1
      },
      {
@@ -2950,7 +2950,7 @@
       "name": "Poland",
       "tonnes": 672.9,
       "share": "30.7%",
-      "chg1m": 32.3,
+      "chg1m": 0.0,
       "chgSinceFirst": 122.9
      },
      {
@@ -2970,7 +2970,7 @@
    },
    "cbFlow": {
     "source": "IMF IRFCL·官方 SDMX API（官方储备黄金持仓 FTO 口径）",
-    "asOf": "2026-10-31",
+    "asOf": "2026-11-01",
     "firstMonth": "2023-01",
     "lastMonth": "2026-08",
     "months": [
@@ -3220,8 +3220,8 @@
       "asOf": "2026-08"
      }
     ],
-    "note": "报告国口径：仅统计向 IMF 月度申报的央行（未报告者不计入，故低于 WGC 全口径）；官方 API 直连，数据止于 2026-08（滞后约 2 个月）",
-    "noteEn": "IMF-reporting countries only: central banks that file monthly with the IMF (non-reporters are excluded, so this runs below the WGC all-country figure). Direct from the official API; data through 2026-08 (roughly a 2-month lag)."
+    "note": "报告国口径：仅统计向 IMF 月度申报的央行（未报告者不计入，故低于 WGC 全口径）；官方 API 直连，数据止于 2026-08（滞后约 3 个月）",
+    "noteEn": "IMF-reporting countries only: central banks that file monthly with the IMF (non-reporters are excluded, so this runs below the WGC all-country figure). Direct from the official API; data through 2026-08 (roughly a 3-month lag)."
    },
    "debt": {
     "source": "FRED·GFDEGDQ188S / A091RC1Q027SBEA",
@@ -3236,7 +3236,7 @@
    },
    "nfpTracker": {
     "source": "自建存档 nfp_tracker.json + 东方财富",
-    "asOf": "2026-10-31",
+    "asOf": "2026-11-01",
     "detail": [
      {
       "month": "2026-04",
@@ -4228,8 +4228,8 @@
      "score": -20,
      "dir": "利空",
      "dirEn": "bearish",
-     "reason": "Polymarket 加息概率 72.1%：紧缩定价利空",
-     "reasonEn": "Polymarket hike odds 72.1%: hawkish pricing is bearish",
+     "reason": "Polymarket 加息概率 72.0%：紧缩定价利空",
+     "reasonEn": "Polymarket hike odds 72.0%: hawkish pricing is bearish",
      "win": "12 月FOMC",
      "winEn": "December FOMC"
     },
@@ -4280,11 +4280,11 @@
     {
      "name": "ETF 持仓",
      "nameEn": "ETF holdings (SPDR)",
-     "score": -2,
+     "score": 0,
      "dir": "中性",
      "dirEn": "neutral",
-     "reason": "SPDR 持仓 -0.22%（2026-10-29）",
-     "reasonEn": "SPDR holdings -0.22% (2026-10-29)",
+     "reason": "SPDR 持仓 +0.05%（2026-10-30）",
+     "reasonEn": "SPDR holdings +0.05% (2026-10-30)",
      "win": "1日",
      "winEn": "1d"
     }
@@ -4399,16 +4399,16 @@
      "titleEn": "FOMC rate decision",
      "est": "基准利率维持 4.00%",
      "estEn": "hold at 4.00%",
-     "prob": "加息 72.1% · 不变 27.5% · 降息 1.0%（Polymarket 市场定价 · 2026-12-10 决议）",
-     "probEn": "hike 72.1% · hold 27.5% · cut 1.0% (Polymarket market pricing · 2026-12-10 meeting)",
+     "prob": "加息 72.0% · 不变 27.5% · 降息 1.0%（Polymarket 市场定价 · 2026-12-10 决议）",
+     "probEn": "hike 72.0% · hold 27.5% · cut 1.0% (Polymarket market pricing · 2026-12-10 meeting)",
      "reasons": [
-      "Polymarket 市场定价 · 2026-12-10 决议：加息 72.1% / 不变 27.5% / 降息 1.0%",
+      "Polymarket 市场定价 · 2026-12-10 决议：加息 72.0% / 不变 27.5% / 降息 1.0%",
       "核心 PCE 近 3 月回升 +0.08pp 至 3.12%，通胀约束支持紧缩",
       "但就业走弱（9 月 +2.9 万，9 月初值 +2.9 万）与 2026-Q3 GDP 3.4% 使紧缩代价高",
       "11/3 中期选举前政治上难以承受紧缩冲击 → AI 较市场更倾向按兵不动"
      ],
      "reasonsEn": [
-      "Polymarket market pricing · 2026-12-10 meeting: hike 72.1% / hold 27.5% / cut 1.0%",
+      "Polymarket market pricing · 2026-12-10 meeting: hike 72.0% / hold 27.5% / cut 1.0%",
       "Core PCE up +0.08pp over 3m to 3.12%: inflation constraint favors tightening",
       "But weak jobs (September +29k; September initial +29k) and 2026-Q3 GDP 3.4% make tightening costly",
       "Politically hard to tighten before the 11/3 midterms → AI leans hold vs the market"
@@ -4465,17 +4465,17 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-10-31 22:41",
+    "asOf": "2026-11-01 06:31",
     "url": "https://polymarket.com/zh/event/fed-decision-in-december-20260729232808632",
     "slug": "fed-decision-in-december-20260729232808632",
     "meeting": "Fed Decision in December?",
     "meetingDate": "2026-12-10",
     "closed": false,
-    "cut50": 0.004,
+    "cut50": 0.0035,
     "cut25": 0.0065,
     "hold": 0.275,
     "hike25": 0.705,
-    "hike50": 0.0165
+    "hike50": 0.0155
    }
   }
  }
