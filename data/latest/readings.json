@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-11-02 22:43 JST",
- "data_asof": "2026-11-02 22:43",
+ "generated_at": "2026-11-03 06:31 JST",
+ "data_asof": "2026-11-03 06:30",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -24,7 +24,7 @@
  },
  "site": {
   "home": "https://xaudaily.com/",
-  "daily_archive": "https://xaudaily.com/d/2026-11-02.html",
+  "daily_archive": "https://xaudaily.com/d/2026-11-03.html",
   "archive_index": "https://xaudaily.com/d/",
   "brief_md": "https://xaudaily.com/brief.md",
   "llms_txt": "https://xaudaily.com/llms.txt",
@@ -874,30 +874,29 @@
     {
      "d": "2026-11-02",
      "o": 3876.1,
-     "h": 3928.1,
+     "h": 3980.8,
      "l": 3889.0,
-     "c": 3919.4
+     "c": 3954.5
     }
    ],
    "stale": false,
    "live": {
-    "last": 3948.09,
-    "chg": 58.09,
-    "chg_pct": 1.49,
-    "date": "2026-11-02",
-    "time": "21:43:02",
+    "last": 3958.19,
+    "chg": 68.19,
+    "chg_pct": 1.75,
+    "date": "2026-11-03",
+    "time": "05:30:04",
     "source": "Sina Finance · COMEX GC live tick"
    }
   },
   "au": {
    "label": "沪金 Au99.99 连续",
    "unit": "元/克",
-   "source": "新浪财经·沪金 Au99.99 连续",
-   "asOf": "2026-11-02",
-   "last": 836.76,
-   "chg1d": -2.15,
+   "source": "新浪财经·沪金 Au99.99 连续（含实时）",
+   "asOf": "2026-11-03",
+   "last": 849.06,
+   "chg1d": 1.18,
    "spark": [
-    937.6,
     932.3,
     940.52,
     935.0,
@@ -926,16 +925,18 @@
     867.4,
     867.26,
     855.18,
-    836.76
+    836.76,
+    849.06
    ],
    "live": {
-    "last": 844.06,
-    "chg": 4.88,
-    "chg_pct": 0.58,
-    "date": "2026-11-02",
-    "time": "21:43:03",
+    "last": 849.06,
+    "chg": 9.88,
+    "chg_pct": 1.18,
+    "date": "2026-11-03",
+    "time": "02:30:00",
     "source": "Sina Finance · SGE Au99.99 live tick"
    },
+   "session": "夜盘收盘",
    "stale": false
   },
   "cpi": {
@@ -1120,9 +1121,8 @@
   },
   "dxy": {
    "source": "GodInformation data/dxy.csv（新浪积累）",
-   "asOf": "2026-11-02",
+   "asOf": "2026-11-03",
    "dates": [
-    "2026-06-30",
     "2026-07-01",
     "2026-07-02",
     "2026-07-03",
@@ -1211,10 +1211,10 @@
     "2026-10-28",
     "2026-10-29",
     "2026-10-30",
-    "2026-11-02"
+    "2026-11-02",
+    "2026-11-03"
    ],
    "vals": [
-    101.17,
     101.41,
     100.86,
     100.91,
@@ -1303,7 +1303,8 @@
     102.14,
     101.88,
     101.97,
-    101.57
+    101.57,
+    101.779
    ]
   },
   "gdp": {
@@ -2203,11 +2204,11 @@
      115.32,
      114.88,
      117.64,
-     108.91
+     104.29
     ],
-    "last": 108.91,
-    "chg30": 8.5,
-    "chg90": -4.8
+    "last": 104.29,
+    "chg30": 3.9,
+    "chg90": -8.9
    },
    "wti": {
     "dates": [
@@ -2466,18 +2467,18 @@
      102.78,
      102.0,
      104.12,
-     99.76
+     96.11
     ],
-    "last": 99.76,
-    "chg30": 4.2,
-    "chg90": -6.3
+    "last": 96.11,
+    "chg30": 0.3,
+    "chg90": -9.7
    },
    "stale": false,
-   "spread": 9.15
+   "spread": 8.18
   },
   "extra": {
    "vix": {
-    "value": 19.6,
+    "value": 21.1,
     "date": "2026-11-02",
     "source": "Yahoo ^VIX（经本机代理，与利率/油价同源）"
    },
@@ -2520,17 +2521,17 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-11-02 22:41",
+    "asOf": "2026-11-03 06:31",
     "url": "https://polymarket.com/zh/event/fed-decision-in-december-20260729232808632",
     "slug": "fed-decision-in-december-20260729232808632",
     "meeting": "Fed Decision in December?",
     "meetingDate": "2026-12-10",
     "closed": false,
-    "cut50": 0.0045,
-    "cut25": 0.006,
-    "hold": 0.275,
-    "hike25": 0.705,
-    "hike50": 0.0145
+    "cut50": 0.0035,
+    "cut25": 0.0055,
+    "hold": 0.255,
+    "hike25": 0.725,
+    "hike50": 0.02
    },
    "adp": {
     "source": "Investing.com（ADP 官方报告，经本机代理）",
@@ -2861,12 +2862,12 @@
      16.9,
      17.2,
      19.4,
-     19.6
+     21.1
     ]
    },
    "cbGold": {
     "source": "Wikipedia·Gold reserve（转引 World Gold Council/IMF IFS）",
-    "asOf": "2026-11-02",
+    "asOf": "2026-11-03",
     "trackerFrom": "2026-01",
     "rows": [
      {
@@ -2963,7 +2964,7 @@
    },
    "cbFlow": {
     "source": "IMF IRFCL·官方 SDMX API（官方储备黄金持仓 FTO 口径）",
-    "asOf": "2026-11-02",
+    "asOf": "2026-11-03",
     "firstMonth": "2023-01",
     "lastMonth": "2026-08",
     "months": [
@@ -3229,7 +3230,7 @@
    },
    "nfpTracker": {
     "source": "自建存档 nfp_tracker.json + 东方财富",
-    "asOf": "2026-11-02",
+    "asOf": "2026-11-03",
     "detail": [
      {
       "month": "2026-04",
@@ -3280,62 +3281,62 @@
     "series": {
      "gold.px": {
       "asOf": "2026-11-02",
-      "value": 3920.89990234375,
+      "value": 3954.89990234375,
       "from": "2006-11-02",
       "n": 5030,
       "pctile": 94.7,
-      "mean": 1655.067,
+      "mean": 1655.073,
       "min": 604.9000244140625,
       "max": 5318.39990234375,
-      "gapFromHigh": -1397.5,
-      "ddFromHighPct": -26.28,
-      "ret1yPct": -1.9,
-      "ret3yPct": 96.1,
-      "ret5yPct": 119.1,
-      "ret10yPct": 200.0
+      "gapFromHigh": -1363.5,
+      "ddFromHighPct": -25.64,
+      "ret1yPct": -1.0,
+      "ret3yPct": 97.8,
+      "ret5yPct": 121.0,
+      "ret10yPct": 202.6
      },
      "silver.px": {
       "asOf": "2026-11-02",
-      "value": 50.2599983215332,
+      "value": 50.599998474121094,
       "from": "2006-11-02",
       "n": 5029,
-      "pctile": 95.1,
+      "pctile": 95.2,
       "mean": 23.754,
       "min": 8.789999961853027,
       "max": 115.08000183105469,
-      "gapFromHigh": -64.82,
-      "ddFromHighPct": -56.33,
-      "ret1yPct": 4.7,
-      "ret3yPct": 116.6,
-      "ret5yPct": 113.9,
-      "ret10yPct": 169.3
+      "gapFromHigh": -64.48,
+      "ddFromHighPct": -56.03,
+      "ret1yPct": 5.4,
+      "ret3yPct": 118.1,
+      "ret5yPct": 115.3,
+      "ret10yPct": 171.2
      },
      "dxy.px": {
       "asOf": "2026-11-02",
-      "value": 101.61499786376953,
+      "value": 101.77100372314453,
       "from": "2006-11-02",
       "n": 5033,
-      "pctile": 85.3,
+      "pctile": 85.7,
       "mean": 90.948,
       "min": 71.33000183105469,
       "max": 114.11000061035156,
-      "gapFromHigh": -12.495,
-      "ddFromHighPct": -10.95,
-      "ret1yPct": 1.8,
-      "ret3yPct": -3.2,
-      "ret5yPct": 8.0,
-      "ret10yPct": 4.3
+      "gapFromHigh": -12.339,
+      "ddFromHighPct": -10.81,
+      "ret1yPct": 2.0,
+      "ret3yPct": -3.1,
+      "ret5yPct": 8.2,
+      "ret10yPct": 4.5
      },
      "rate.real10": {
-      "asOf": "2026-10-29",
-      "value": 2.63,
+      "asOf": "2026-10-30",
+      "value": 2.6,
       "from": "2003-01-02",
-      "n": 5961,
-      "pctile": 98.5,
+      "n": 5962,
+      "pctile": 98.3,
       "mean": 1.018,
       "min": -1.19,
       "max": 3.15,
-      "gapFromHigh": -0.52
+      "gapFromHigh": -0.55
      },
      "rate.breakeven10": {
       "asOf": "2026-10-30",
@@ -3352,8 +3353,8 @@
     "ratio": {
      "goldSilver": {
       "asOf": "2026-11-02",
-      "value": 78.0,
-      "pctile": 66.1,
+      "value": 78.2,
+      "pctile": 66.5,
       "min": 32.0,
       "max": 125.9,
       "mean": 71.0,
@@ -3361,21 +3362,19 @@
      }
     },
     "realRate": {
-     "market": 2.63,
-     "marketAsOf": "2026-10-29",
+     "market": 2.6,
+     "marketAsOf": "2026-10-30",
      "proxy": 1.21,
      "proxyNote": "本站代理口径 = 10Y 名义收益率 − CPI 同比；与市场口径（TIPS）的差 = 通胀预期与流动性溢价的合成",
      "proxyNoteEn": "Site proxy = 10Y nominal yield − CPI y/y; the gap versus the market rate (TIPS) is a mix of inflation expectations and liquidity premium",
-     "gap": 1.42
+     "gap": 1.39
     }
    },
    "crossAsset": {
     "spx": {
      "source": "Yahoo Finance ^GSPC（经本机代理）",
-     "asOf": "2026-10-30",
+     "asOf": "2026-11-02",
      "dates": [
-      "2026-04-30",
-      "2026-05-01",
       "2026-05-04",
       "2026-05-05",
       "2026-05-06",
@@ -3501,11 +3500,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
      ],
      "vals": [
-      7209.01,
-      7230.12,
       7200.75,
       7259.22,
       7365.12,
@@ -3631,17 +3629,16 @@
       7722.6,
       7743.98,
       7720.39,
-      7580.07
+      7580.07,
+      7541.4
      ],
-     "last": 7580.07,
-     "chg20": -1.85
+     "last": 7541.4,
+     "chg20": -2.99
     },
     "tlt": {
      "source": "Yahoo Finance TLT（经本机代理）",
-     "asOf": "2026-10-30",
+     "asOf": "2026-11-02",
      "dates": [
-      "2026-04-30",
-      "2026-05-01",
       "2026-05-04",
       "2026-05-05",
       "2026-05-06",
@@ -3767,11 +3764,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
      ],
      "vals": [
-      85.62,
-      85.61,
       84.96,
       85.43,
       86.08,
@@ -3897,17 +3893,16 @@
       81.63,
       80.99,
       81.49,
-      81.84
+      81.84,
+      81.73
      ],
-     "last": 81.84,
-     "chg20": 5.63
+     "last": 81.73,
+     "chg20": 5.99
     },
     "gld": {
      "source": "Yahoo Finance GLD（经本机代理）",
-     "asOf": "2026-10-30",
+     "asOf": "2026-11-02",
      "dates": [
-      "2026-04-30",
-      "2026-05-01",
       "2026-05-04",
       "2026-05-05",
       "2026-05-06",
@@ -4033,11 +4028,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
      ],
      "vals": [
-      423.66,
-      423.18,
       414.71,
       418.27,
       430.96,
@@ -4163,22 +4157,23 @@
       372.28,
       373.51,
       368.57,
-      355.78
+      355.78,
+      361.65
      ],
-     "last": 355.78,
-     "chg20": -6.41
+     "last": 361.65,
+     "chg20": -4.72
     },
-    "asOf": "2026-10-30"
+    "asOf": "2026-11-02"
    },
    "drivers": [
     {
      "name": "跨资产资金流向",
      "nameEn": "Cross-asset capital flows",
-     "score": -53,
+     "score": -51,
      "dir": "利空",
      "dirEn": "bearish",
-     "reason": "股（标普 -1.9%）、金（-6.4%）同跌而美债（TLT +5.6%）上涨 —— **资金正从股票与黄金迁向美债**：高利率环境下债券提供确定性收益，黄金作为无息资产被优先卖出",
-     "reasonEn": "Equities (S&P -1.9%) and gold (-6.4%) fell while long Treasuries (TLT +5.6%) rose — capital is rotating out of stocks and gold INTO bonds: at high yields, bonds offer certain income while gold is sold first as a non-yielding asset",
+     "reason": "股（标普 -3.0%）、金（-4.7%）同跌而美债（TLT +6.0%）上涨 —— **资金正从股票与黄金迁向美债**：高利率环境下债券提供确定性收益，黄金作为无息资产被优先卖出",
+     "reasonEn": "Equities (S&P -3.0%) and gold (-4.7%) fell while long Treasuries (TLT +6.0%) rose — capital is rotating out of stocks and gold INTO bonds: at high yields, bonds offer certain income while gold is sold first as a non-yielding asset",
      "win": "20日",
      "winEn": "20d"
     },
@@ -4194,37 +4189,26 @@
      "winEn": "20d"
     },
     {
-     "name": "油价传导",
-     "nameEn": "Oil→CPI transmission",
-     "score": -32,
+     "name": "政策定价",
+     "nameEn": "Policy pricing",
+     "score": -22,
      "dir": "利空",
      "dirEn": "bearish",
-     "reason": "布伦特 30 日 +8.5%（90 日 -4.8%）至 $108.91：短期方向主导——油价→CPI→利率压力",
-     "reasonEn": "Brent +8.5% over 30d (-4.8% over 90d) to $108.91: the 30d direction dominates — oil→CPI→rates pressure",
-     "win": "30日",
-     "winEn": "30d"
+     "reason": "Polymarket 加息概率 74.5%：紧缩定价利空",
+     "reasonEn": "Polymarket hike odds 74.5%: hawkish pricing is bearish",
+     "win": "12 月FOMC",
+     "winEn": "December FOMC"
     },
     {
      "name": "避险情绪",
      "nameEn": "Risk sentiment (VIX)",
-     "score": 21,
+     "score": 22,
      "dir": "利多",
      "dirEn": "bullish",
-     "reason": "VIX 20 日 +26.5% 至 19.6：避险情绪升温，资金寻求黄金等避险资产 → 利多｜注意：本次金价随风险资产一同下跌，VIX 上涨并不代表避险资金在买黄金 —— 真正的方向由「跨资产资金流向」一项表达，此处已大幅降权",
-     "reasonEn": "VIX +26.5% over 20d to 19.6: risk-off rising — flows seek safe havens such as gold (bullish) | Note: gold fell alongside risk assets, so a higher VIX does NOT mean haven money is buying gold; the real signal sits in Cross-asset capital flows, so this factor is heavily damped",
+     "reason": "VIX 20 日 +36.1% 至 21.1：避险情绪升温，资金寻求黄金等避险资产 → 利多｜注意：本次金价随风险资产一同下跌，VIX 上涨并不代表避险资金在买黄金 —— 真正的方向由「跨资产资金流向」一项表达，此处已大幅降权",
+     "reasonEn": "VIX +36.1% over 20d to 21.1: risk-off rising — flows seek safe havens such as gold (bullish) | Note: gold fell alongside risk assets, so a higher VIX does NOT mean haven money is buying gold; the real signal sits in Cross-asset capital flows, so this factor is heavily damped",
      "win": "20日",
      "winEn": "20d"
-    },
-    {
-     "name": "政策定价",
-     "nameEn": "Policy pricing",
-     "score": -20,
-     "dir": "利空",
-     "dirEn": "bearish",
-     "reason": "Polymarket 加息概率 71.9%：紧缩定价利空",
-     "reasonEn": "Polymarket hike odds 71.9%: hawkish pricing is bearish",
-     "win": "12 月FOMC",
-     "winEn": "December FOMC"
     },
     {
      "name": "通胀方向",
@@ -4249,6 +4233,17 @@
      "winEn": "structural"
     },
     {
+     "name": "油价传导",
+     "nameEn": "Oil→CPI transmission",
+     "score": -15,
+     "dir": "利空",
+     "dirEn": "bearish",
+     "reason": "布伦特 30 日 +3.9%（90 日 -8.9%）至 $104.29：短期方向主导——油价→CPI→利率压力",
+     "reasonEn": "Brent +3.9% over 30d (-8.9% over 90d) to $104.29: the 30d direction dominates — oil→CPI→rates pressure",
+     "win": "30日",
+     "winEn": "30d"
+    },
+    {
      "name": "美国债务负担",
      "nameEn": "US debt burden",
      "score": 13,
@@ -4262,11 +4257,11 @@
     {
      "name": "美元指数",
      "nameEn": "US Dollar Index (DXY)",
-     "score": 10,
-     "dir": "利多",
-     "dirEn": "bullish",
-     "reason": "DXY 20 日 -0.53% 至 101.57：美元走弱利多黄金",
-     "reasonEn": "DXY -0.53% over 20d to 101.57: weaker dollar supports gold",
+     "score": 2,
+     "dir": "中性",
+     "dirEn": "neutral",
+     "reason": "DXY 20 日 -0.06% 至 101.779：美元走弱利多黄金",
+     "reasonEn": "DXY -0.06% over 20d to 101.779: weaker dollar supports gold",
      "win": "20日",
      "winEn": "20d"
     },
@@ -4330,18 +4325,18 @@
      "dateEn": "2026-11-10 (est.)",
      "title": "10 月 CPI 发布",
      "titleEn": "October CPI release",
-     "est": "3.80%（区间 3.6–4.0%）",
-     "estEn": "3.80% (range 3.6–4.0%)",
-     "prob": "≤3.6%：13% · 3.6–4.0%：73% · ≥4.0%：14%",
-     "probEn": "≤3.6%: 13% · 3.6–4.0%: 73% · ≥4.0%: 14%",
+     "est": "3.52%（区间 3.3–3.7%）",
+     "estEn": "3.52% (range 3.3–3.7%)",
+     "prob": "≤3.3%：11% · 3.3–3.7%：73% · ≥3.7%：16%",
+     "probEn": "≤3.3%: 11% · 3.3–3.7%: 73% · ≥3.7%: 16%",
      "reasons": [
-      "布伦特近 30 日 +8.5% / 90 日 -4.8%：能源分项（权重≈6.5%）贡献约 +0.03pp",
+      "布伦特近 30 日 +3.9% / 90 日 -8.9%：能源分项（权重≈6.5%）贡献约 -0.25pp",
       "近两月 CPI 动能 +0.15pp/月（3.4→3.4→3.7），回落延续但减速，衰减系数 0.6",
       "核心 PCE 3.12% 仍高于 2%：租金/服务粘性支撑核心分项",
       "ADP 仅 +9.0 万、密歇根信心 48.0：需求走弱压制服务通胀"
      ],
      "reasonsEn": [
-      "Brent +8.5% (30d) / -4.8% (90d): energy component (weight ≈6.5%) contributes ≈+0.03pp",
+      "Brent +3.9% (30d) / -8.9% (90d): energy component (weight ≈6.5%) contributes ≈-0.25pp",
       "CPI momentum +0.15pp/m over 2m (3.4→3.4→3.7): disinflation continues but decelerates (decay 0.6)",
       "Core PCE 3.12% still above 2%: rent/services stickiness supports the core",
       "ADP just +90k and U-Mich confidence 48.0: weak demand caps services inflation"
@@ -4392,16 +4387,16 @@
      "titleEn": "FOMC rate decision",
      "est": "基准利率维持 4.00%",
      "estEn": "hold at 4.00%",
-     "prob": "加息 71.9% · 不变 27.5% · 降息 1.0%（Polymarket 市场定价 · 2026-12-10 决议）",
-     "probEn": "hike 71.9% · hold 27.5% · cut 1.0% (Polymarket market pricing · 2026-12-10 meeting)",
+     "prob": "加息 74.5% · 不变 25.5% · 降息 0.9%（Polymarket 市场定价 · 2026-12-10 决议）",
+     "probEn": "hike 74.5% · hold 25.5% · cut 0.9% (Polymarket market pricing · 2026-12-10 meeting)",
      "reasons": [
-      "Polymarket 市场定价 · 2026-12-10 决议：加息 71.9% / 不变 27.5% / 降息 1.0%",
+      "Polymarket 市场定价 · 2026-12-10 决议：加息 74.5% / 不变 25.5% / 降息 0.9%",
       "核心 PCE 近 3 月回升 +0.08pp 至 3.12%，通胀约束支持紧缩",
       "但就业走弱（9 月 +2.9 万，9 月初值 +2.9 万）与 2026-Q3 GDP 3.4% 使紧缩代价高",
       "11/3 中期选举前政治上难以承受紧缩冲击 → AI 较市场更倾向按兵不动"
      ],
      "reasonsEn": [
-      "Polymarket market pricing · 2026-12-10 meeting: hike 71.9% / hold 27.5% / cut 1.0%",
+      "Polymarket market pricing · 2026-12-10 meeting: hike 74.5% / hold 25.5% / cut 0.9%",
       "Core PCE up +0.08pp over 3m to 3.12%: inflation constraint favors tightening",
       "But weak jobs (September +29k; September initial +29k) and 2026-Q3 GDP 3.4% make tightening costly",
       "Politically hard to tighten before the 11/3 midterms → AI leans hold vs the market"
@@ -4411,13 +4406,13 @@
    ],
    "liquidity": {
     "asOf": "2026-10-30",
-    "score": 73.1,
-    "z": 0.41,
+    "score": 79.1,
+    "z": 0.49,
     "level": "关注",
     "categories": {
      "funding": {
-      "pct": 78.6,
-      "level": "关注",
+      "pct": 84.1,
+      "level": "偏高",
       "trig": 0,
       "total": 3
      },
@@ -4755,7 +4750,7 @@
       0.078,
       0.333,
       0.439,
-      0.408
+      0.494
      ],
      "funding": [
       -0.468,
@@ -4913,7 +4908,7 @@
       -0.266,
       0.291,
       0.552,
-      0.495
+      0.71
      ],
      "liquidity": [
       0.673,
@@ -5506,6 +5501,10 @@
      [
       "2026-11-02",
       16.0
+     ],
+     [
+      "2026-11-03",
+      16.0
      ]
     ],
     "driver.Cross-asset capital flows": [
@@ -5516,6 +5515,10 @@
      [
       "2026-11-02",
       -53.0
+     ],
+     [
+      "2026-11-03",
+      -51.0
      ]
     ],
     "driver.ETF holdings (SPDR)": [
@@ -5625,6 +5628,10 @@
      ],
      [
       "2026-11-02",
+      0.0
+     ],
+     [
+      "2026-11-03",
       0.0
      ]
     ],
@@ -5736,6 +5743,10 @@
      [
       "2026-11-02",
       -16.0
+     ],
+     [
+      "2026-11-03",
+      -16.0
      ]
     ],
     "driver.Oil→CPI transmission": [
@@ -5846,6 +5857,10 @@
      [
       "2026-11-02",
       -32.0
+     ],
+     [
+      "2026-11-03",
+      -15.0
      ]
     ],
     "driver.Policy pricing": [
@@ -5956,6 +5971,10 @@
      [
       "2026-11-02",
       -20.0
+     ],
+     [
+      "2026-11-03",
+      -22.0
      ]
     ],
     "driver.Risk sentiment (VIX)": [
@@ -6066,6 +6085,10 @@
      [
       "2026-11-02",
       21.0
+     ],
+     [
+      "2026-11-03",
+      22.0
      ]
     ],
     "driver.Treasury yield trend": [
@@ -6175,6 +6198,10 @@
      ],
      [
       "2026-11-02",
+      47.0
+     ],
+     [
+      "2026-11-03",
       47.0
      ]
     ],
@@ -6286,6 +6313,10 @@
      [
       "2026-11-02",
       10.0
+     ],
+     [
+      "2026-11-03",
+      2.0
      ]
     ],
     "driver.US debt burden": [
@@ -6395,6 +6426,10 @@
      ],
      [
       "2026-11-02",
+      13.0
+     ],
+     [
+      "2026-11-03",
       13.0
      ]
     ],
@@ -6506,6 +6541,10 @@
      [
       "2026-11-02",
       0.006
+     ],
+     [
+      "2026-11-03",
+      0.0055
      ]
     ],
     "polymarket.cut50": [
@@ -6616,6 +6655,10 @@
      [
       "2026-11-02",
       0.0045
+     ],
+     [
+      "2026-11-03",
+      0.0035
      ]
     ],
     "spdr.chgPct": [
@@ -6726,6 +6769,10 @@
      [
       "2026-11-02",
       0.05
+     ],
+     [
+      "2026-11-03",
+      0.05
      ]
     ],
     "spdr.tonnes": [
@@ -6835,6 +6882,10 @@
      ],
      [
       "2026-11-02",
+      1041.7
+     ],
+     [
+      "2026-11-03",
       1041.7
      ]
     ],
@@ -6952,6 +7003,10 @@
      [
       "2026-11-02",
       19.6
+     ],
+     [
+      "2026-11-03",
+      21.1
      ]
     ]
    }
@@ -7004,17 +7059,17 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-11-02 22:41",
+    "asOf": "2026-11-03 06:31",
     "url": "https://polymarket.com/zh/event/fed-decision-in-december-20260729232808632",
     "slug": "fed-decision-in-december-20260729232808632",
     "meeting": "Fed Decision in December?",
     "meetingDate": "2026-12-10",
     "closed": false,
-    "cut50": 0.0045,
-    "cut25": 0.006,
-    "hold": 0.275,
-    "hike25": 0.705,
-    "hike50": 0.0145
+    "cut50": 0.0035,
+    "cut25": 0.0055,
+    "hold": 0.255,
+    "hike25": 0.725,
+    "hike50": 0.02
    }
   }
  }
