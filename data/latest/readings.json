@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-11-08 06:31 JST",
- "data_asof": "2026-11-08 06:30",
+ "generated_at": "2026-11-08 22:43 JST",
+ "data_asof": "2026-11-08 22:43",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -36,7 +36,7 @@
    "label": "COMEX GC 连续",
    "unit": "美元/盎司",
    "source": "AKShare·新浪全球期货外盘（复用 GodInformation 采集链路）",
-   "asOf": "2026-11-06",
+   "asOf": "2026-11-07",
    "rows": [
     {
      "d": "2026-05-25",
@@ -1949,7 +1949,6 @@
    "asOf": "2026-11-06",
    "brent": {
     "dates": [
-     "2026-05-07",
      "2026-05-08",
      "2026-05-11",
      "2026-05-12",
@@ -2079,7 +2078,6 @@
      "2026-11-06"
     ],
     "vals": [
-     100.06,
      101.29,
      104.21,
      107.77,
@@ -2210,11 +2208,10 @@
     ],
     "last": 98.32,
     "chg30": -5.8,
-    "chg90": -1.7
+    "chg90": -2.9
    },
    "wti": {
     "dates": [
-     "2026-05-07",
      "2026-05-08",
      "2026-05-11",
      "2026-05-12",
@@ -2344,7 +2341,6 @@
      "2026-11-06"
     ],
     "vals": [
-     94.81,
      95.42,
      98.07,
      102.18,
@@ -2475,7 +2471,7 @@
     ],
     "last": 90.83,
     "chg30": -1.7,
-    "chg90": -4.2
+    "chg90": -4.8
    },
    "stale": false,
    "spread": 7.49
@@ -2525,13 +2521,13 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-11-08 06:31",
+    "asOf": "2026-11-08 22:40",
     "url": "https://polymarket.com/zh/event/fed-decision-in-december-20260729232808632",
     "slug": "fed-decision-in-december-20260729232808632",
     "meeting": "Fed Decision in December?",
     "meetingDate": "2026-12-10",
     "closed": false,
-    "cut50": 0.006,
+    "cut50": 0.0055,
     "cut25": 0.0065,
     "hold": 0.215,
     "hike25": 0.765,
@@ -2948,7 +2944,7 @@
     "source": "IMF IRFCL·官方 SDMX API（官方储备黄金持仓 FTO 口径）",
     "asOf": "2026-11-08",
     "firstMonth": "2023-01",
-    "lastMonth": "2026-08",
+    "lastMonth": "2026-09",
     "months": [
      "2023-01",
      "2023-02",
@@ -2993,7 +2989,8 @@
      "2026-05",
      "2026-06",
      "2026-07",
-     "2026-08"
+     "2026-08",
+     "2026-09"
     ],
     "vals": [
      89.2,
@@ -3039,7 +3036,8 @@
      31.9,
      46.9,
      68.5,
-     45.8
+     45.8,
+     34.3
     ],
     "cover": [
      23,
@@ -3085,7 +3083,8 @@
      25,
      26,
      20,
-     20
+     20,
+     15
     ],
     "years": [
      {
@@ -3108,9 +3107,9 @@
      },
      {
       "year": "2026",
-      "net": 180.6,
+      "net": 214.9,
       "from": "2026-01",
-      "to": "2026-08"
+      "to": "2026-09"
      }
     ],
     "tops": [
@@ -3196,8 +3195,8 @@
       "asOf": "2026-08"
      }
     ],
-    "note": "报告国口径：仅统计向 IMF 月度申报的央行（未报告者不计入，故低于 WGC 全口径）；官方 API 直连，数据止于 2026-08（滞后约 3 个月）",
-    "noteEn": "IMF-reporting countries only: central banks that file monthly with the IMF (non-reporters are excluded, so this runs below the WGC all-country figure). Direct from the official API; data through 2026-08 (roughly a 3-month lag)."
+    "note": "报告国口径：仅统计向 IMF 月度申报的央行（未报告者不计入，故低于 WGC 全口径）；官方 API 直连，数据止于 2026-09（滞后约 2 个月）",
+    "noteEn": "IMF-reporting countries only: central banks that file monthly with the IMF (non-reporters are excluded, so this runs below the WGC all-country figure). Direct from the official API; data through 2026-09 (roughly a 2-month lag)."
    },
    "debt": {
     "source": "FRED·GFDEGDQ188S / A091RC1Q027SBEA",
@@ -3264,10 +3263,10 @@
      "gold.px": {
       "asOf": "2026-11-06",
       "value": 4074.89990234375,
-      "from": "2006-11-07",
-      "n": 5031,
+      "from": "2006-11-08",
+      "n": 5030,
       "pctile": 95.4,
-      "mean": 1657.595,
+      "mean": 1657.8,
       "min": 604.9000244140625,
       "max": 5318.39990234375,
       "gapFromHigh": -1243.5,
@@ -3279,27 +3278,27 @@
      },
      "silver.px": {
       "asOf": "2026-11-06",
-      "value": 51.803001403808594,
-      "from": "2006-11-07",
-      "n": 5030,
+      "value": 51.94200134277344,
+      "from": "2006-11-08",
+      "n": 5029,
       "pctile": 95.3,
-      "mean": 23.782,
+      "mean": 23.785,
       "min": 8.789999961853027,
       "max": 115.08000183105469,
-      "gapFromHigh": -63.277,
-      "ddFromHighPct": -54.99,
-      "ret1yPct": 8.4,
-      "ret3yPct": 130.2,
-      "ret5yPct": 114.5,
-      "ret10yPct": 182.4
+      "gapFromHigh": -63.138,
+      "ddFromHighPct": -54.86,
+      "ret1yPct": 8.7,
+      "ret3yPct": 130.8,
+      "ret5yPct": 115.1,
+      "ret10yPct": 183.2
      },
      "dxy.px": {
       "asOf": "2026-11-06",
       "value": 102.30000305175781,
-      "from": "2006-11-07",
-      "n": 5034,
+      "from": "2006-11-08",
+      "n": 5033,
       "pctile": 87.2,
-      "mean": 90.959,
+      "mean": 90.961,
       "min": 71.33000183105469,
       "max": 114.11000061035156,
       "gapFromHigh": -11.81,
@@ -3335,12 +3334,12 @@
     "ratio": {
      "goldSilver": {
       "asOf": "2026-11-06",
-      "value": 78.7,
-      "pctile": 67.9,
+      "value": 78.5,
+      "pctile": 67.2,
       "min": 32.0,
       "max": 125.9,
       "mean": 71.0,
-      "n": 5029
+      "n": 5028
      }
     },
     "realRate": {
@@ -4193,8 +4192,8 @@
      "score": 22,
      "dir": "利多",
      "dirEn": "bullish",
-     "reason": "布伦特 30 日 -5.8%（90 日 -1.7%）至 $98.32：短期方向主导——油价→CPI→利率压力",
-     "reasonEn": "Brent -5.8% over 30d (-1.7% over 90d) to $98.32: the 30d direction dominates — oil→CPI→rates pressure",
+     "reason": "布伦特 30 日 -5.8%（90 日 -2.9%）至 $98.32：短期方向主导——油价→CPI→利率压力",
+     "reasonEn": "Brent -5.8% over 30d (-2.9% over 90d) to $98.32: the 30d direction dominates — oil→CPI→rates pressure",
      "win": "30日",
      "winEn": "30d"
     },
@@ -4226,8 +4225,8 @@
      "score": 16,
      "dir": "利多",
      "dirEn": "bullish",
-     "reason": "IMF 报告国近 12 个月净购金 +311 吨（2025-09~2026-08，买入仍在持续）+ WGC 调查 95% 央行料继续增持：结构性利多（未报告央行未计入）",
-     "reasonEn": "IMF-reporting central banks net-bought +311 t over the last 12 months (2025-09–2026-08) and the WGC survey has 95% expecting more buying: structurally bullish (non-reporting banks excluded)",
+     "reason": "IMF 报告国近 12 个月净购金 +305 吨（2025-10~2026-09，买入仍在持续）+ WGC 调查 95% 央行料继续增持：结构性利多（未报告央行未计入）",
+     "reasonEn": "IMF-reporting central banks net-bought +305 t over the last 12 months (2025-10–2026-09) and the WGC survey has 95% expecting more buying: structurally bullish (non-reporting banks excluded)",
      "win": "结构",
      "winEn": "structural"
     },
@@ -4272,18 +4271,18 @@
      "dateEn": "2026-11-10 (est.)",
      "title": "10 月 CPI 发布",
      "titleEn": "October CPI release",
-     "est": "3.55%（区间 3.3–3.8%）",
-     "estEn": "3.55% (range 3.3–3.8%)",
-     "prob": "≤3.3%：8% · 3.3–3.8%：84% · ≥3.8%：8%",
-     "probEn": "≤3.3%: 8% · 3.3–3.8%: 84% · ≥3.8%: 8%",
+     "est": "3.50%（区间 3.3–3.7%）",
+     "estEn": "3.50% (range 3.3–3.7%)",
+     "prob": "≤3.3%：13% · 3.3–3.7%：73% · ≥3.7%：14%",
+     "probEn": "≤3.3%: 13% · 3.3–3.7%: 73% · ≥3.7%: 14%",
      "reasons": [
-      "布伦特近 30 日 -5.8% / 90 日 -1.7%：能源分项（权重≈6.5%）贡献约 -0.22pp",
+      "布伦特近 30 日 -5.8% / 90 日 -2.9%：能源分项（权重≈6.5%）贡献约 -0.26pp",
       "近两月 CPI 动能 +0.15pp/月（3.4→3.4→3.7），回落延续但减速，衰减系数 0.6",
       "核心 PCE 3.12% 仍高于 2%：租金/服务粘性支撑核心分项",
       "ADP 仅 +8.6 万、密歇根信心 51.0：需求走弱压制服务通胀"
      ],
      "reasonsEn": [
-      "Brent -5.8% (30d) / -1.7% (90d): energy component (weight ≈6.5%) contributes ≈-0.22pp",
+      "Brent -5.8% (30d) / -2.9% (90d): energy component (weight ≈6.5%) contributes ≈-0.26pp",
       "CPI momentum +0.15pp/m over 2m (3.4→3.4→3.7): disinflation continues but decelerates (decay 0.6)",
       "Core PCE 3.12% still above 2%: rent/services stickiness supports the core",
       "ADP just +86k and U-Mich confidence 51.0: weak demand caps services inflation"
@@ -6754,7 +6753,7 @@
      ],
      [
       "2026-11-08",
-      0.006
+      0.0055
      ]
     ],
     "spdr.chgPct": [
@@ -7179,13 +7178,13 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-11-08 06:31",
+    "asOf": "2026-11-08 22:40",
     "url": "https://polymarket.com/zh/event/fed-decision-in-december-20260729232808632",
     "slug": "fed-decision-in-december-20260729232808632",
     "meeting": "Fed Decision in December?",
     "meetingDate": "2026-12-10",
     "closed": false,
-    "cut50": 0.006,
+    "cut50": 0.0055,
     "cut25": 0.0065,
     "hold": 0.215,
     "hike25": 0.765,
