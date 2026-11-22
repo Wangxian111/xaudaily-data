@@ -1,7 +1,7 @@
 {
  "schema": "xaudaily.readings/v1",
- "generated_at": "2026-11-22 06:32 JST",
- "data_asof": "2026-11-22 06:30",
+ "generated_at": "2026-11-22 22:42 JST",
+ "data_asof": "2026-11-22 22:40",
  "units": {
   "gold": "USD/oz（COMEX GC 连续；live 为其后的实时 tick）",
   "au": "CNY/g（上期所/SGE Au99.99 连续）",
@@ -1949,7 +1949,6 @@
    "asOf": "2026-11-20",
    "brent": {
     "dates": [
-     "2026-05-21",
      "2026-05-22",
      "2026-05-26",
      "2026-05-27",
@@ -2079,7 +2078,6 @@
      "2026-11-20"
     ],
     "vals": [
-     102.58,
      103.54,
      99.58,
      94.29,
@@ -2206,15 +2204,14 @@
      93.14,
      91.95,
      91.98,
-     92.57
+     89.95
     ],
-    "last": 92.57,
-    "chg30": -11.6,
-    "chg90": -9.8
+    "last": 89.95,
+    "chg30": -14.1,
+    "chg90": -13.1
    },
    "wti": {
     "dates": [
-     "2026-05-21",
      "2026-05-22",
      "2026-05-26",
      "2026-05-27",
@@ -2344,7 +2341,6 @@
      "2026-11-20"
     ],
     "vals": [
-     96.35,
      96.6,
      93.89,
      88.68,
@@ -2475,10 +2471,10 @@
     ],
     "last": 83.98,
     "chg30": -8.6,
-    "chg90": -12.8
+    "chg90": -13.1
    },
    "stale": false,
-   "spread": 8.59
+   "spread": 5.97
   },
   "extra": {
    "vix": {
@@ -2525,17 +2521,17 @@
    },
    "polymarket": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-11-22 06:32",
+    "asOf": "2026-11-22 22:42",
     "url": "https://polymarket.com/zh/event/fed-decision-in-december-20260729232808632",
     "slug": "fed-decision-in-december-20260729232808632",
     "meeting": "Fed Decision in December?",
     "meetingDate": "2026-12-10",
     "closed": false,
-    "cut50": 0.0045,
-    "cut25": 0.0075,
+    "cut50": 0.0035,
+    "cut25": 0.0055,
     "hold": 0.0675,
     "hike25": 0.895,
-    "hike50": 0.022
+    "hike50": 0.0215
    },
    "adp": {
     "source": "TradingEconomics（ADP 就业变动）",
@@ -3129,9 +3125,9 @@
       "name": "俄罗斯",
       "nameEn": "Russia",
       "base": 2329.7,
-      "last": 2264.3,
-      "net": -65.3,
-      "asOf": "2026-09"
+      "last": 2255.0,
+      "net": -74.6,
+      "asOf": "2026-10"
      },
      {
       "code": "POL",
@@ -3265,10 +3261,10 @@
      "gold.px": {
       "asOf": "2026-11-20",
       "value": 3515.39990234375,
-      "from": "2006-11-21",
-      "n": 5031,
+      "from": "2006-11-22",
+      "n": 5030,
       "pctile": 93.9,
-      "mean": 1664.022,
+      "mean": 1664.228,
       "min": 604.9000244140625,
       "max": 5318.39990234375,
       "gapFromHigh": -1803.0,
@@ -3281,10 +3277,10 @@
      "silver.px": {
       "asOf": "2026-11-20",
       "value": 41.03499984741211,
-      "from": "2006-11-21",
-      "n": 5030,
+      "from": "2006-11-22",
+      "n": 5029,
       "pctile": 93.4,
-      "mean": 23.852,
+      "mean": 23.854,
       "min": 8.789999961853027,
       "max": 115.08000183105469,
       "gapFromHigh": -74.045,
@@ -3297,10 +3293,10 @@
      "dxy.px": {
       "asOf": "2026-11-20",
       "value": 103.80999755859375,
-      "from": "2006-11-21",
-      "n": 5034,
+      "from": "2006-11-22",
+      "n": 5033,
       "pctile": 90.9,
-      "mean": 90.995,
+      "mean": 90.996,
       "min": 71.33000183105469,
       "max": 114.11000061035156,
       "gapFromHigh": -10.3,
@@ -3341,7 +3337,7 @@
       "min": 32.0,
       "max": 125.9,
       "mean": 71.1,
-      "n": 5029
+      "n": 5028
      }
     },
     "realRate": {
@@ -4167,6 +4163,17 @@
      "winEn": "20d"
     },
     {
+     "name": "油价传导",
+     "nameEn": "Oil→CPI transmission",
+     "score": 53,
+     "dir": "利多",
+     "dirEn": "bullish",
+     "reason": "布伦特 30 日 -14.1%（90 日 -13.1%）至 $89.95：短期方向主导——油价→CPI→利率压力",
+     "reasonEn": "Brent -14.1% over 30d (-13.1% over 90d) to $89.95: the 30d direction dominates — oil→CPI→rates pressure",
+     "win": "30日",
+     "winEn": "30d"
+    },
+    {
      "name": "美元指数",
      "nameEn": "US Dollar Index (DXY)",
      "score": -47,
@@ -4178,24 +4185,13 @@
      "winEn": "20d"
     },
     {
-     "name": "油价传导",
-     "nameEn": "Oil→CPI transmission",
-     "score": 44,
-     "dir": "利多",
-     "dirEn": "bullish",
-     "reason": "布伦特 30 日 -11.6%（90 日 -9.8%）至 $92.57：短期方向主导——油价→CPI→利率压力",
-     "reasonEn": "Brent -11.6% over 30d (-9.8% over 90d) to $92.57: the 30d direction dominates — oil→CPI→rates pressure",
-     "win": "30日",
-     "winEn": "30d"
-    },
-    {
      "name": "政策定价",
      "nameEn": "Policy pricing",
-     "score": -38,
+     "score": -37,
      "dir": "利空",
      "dirEn": "bearish",
-     "reason": "Polymarket 加息概率 91.7%：紧缩定价利空",
-     "reasonEn": "Polymarket hike odds 91.7%: hawkish pricing is bearish",
+     "reason": "Polymarket 加息概率 91.6%：紧缩定价利空",
+     "reasonEn": "Polymarket hike odds 91.6%: hawkish pricing is bearish",
      "win": "12 月FOMC",
      "winEn": "December FOMC"
     },
@@ -4335,16 +4331,16 @@
      "titleEn": "FOMC rate decision",
      "est": "基准利率维持 4.00%",
      "estEn": "hold at 4.00%",
-     "prob": "加息 91.7% · 不变 6.8% · 降息 1.2%（Polymarket 市场定价 · 2026-12-10 决议）",
-     "probEn": "hike 91.7% · hold 6.8% · cut 1.2% (Polymarket market pricing · 2026-12-10 meeting)",
+     "prob": "加息 91.6% · 不变 6.8% · 降息 0.9%（Polymarket 市场定价 · 2026-12-10 决议）",
+     "probEn": "hike 91.6% · hold 6.8% · cut 0.9% (Polymarket market pricing · 2026-12-10 meeting)",
      "reasons": [
-      "Polymarket 市场定价 · 2026-12-10 决议：加息 91.7% / 不变 6.8% / 降息 1.2%",
+      "Polymarket 市场定价 · 2026-12-10 决议：加息 91.6% / 不变 6.8% / 降息 0.9%",
       "核心 PCE 近 3 月回升 +0.08pp 至 3.12%，通胀约束支持紧缩",
       "就业仍有韧性（10 月 +16.5 万，10 月初值 +16.5 万），2026-Q3 GDP 3.4% 下紧缩代价相对可控",
       "选举政治使紧缩的政治成本偏高 → AI 较市场更倾向按兵不动"
      ],
      "reasonsEn": [
-      "Polymarket market pricing · 2026-12-10 meeting: hike 91.7% / hold 6.8% / cut 1.2%",
+      "Polymarket market pricing · 2026-12-10 meeting: hike 91.6% / hold 6.8% / cut 0.9%",
       "Core PCE up +0.08pp over 3m to 3.12%: inflation constraint favors tightening",
       "Jobs still resilient (October +165k; October initial +165k); with 2026-Q3 GDP at 3.4% the cost of tightening is manageable",
       "Election politics raise the political cost of tightening → AI leans hold vs the market"
@@ -5926,7 +5922,7 @@
      ],
      [
       "2026-11-22",
-      44.0
+      53.0
      ]
     ],
     "driver.Policy pricing": [
@@ -6048,7 +6044,7 @@
      ],
      [
       "2026-11-22",
-      -38.0
+      -37.0
      ]
     ],
     "driver.Risk sentiment (VIX)": [
@@ -6658,7 +6654,7 @@
      ],
      [
       "2026-11-22",
-      0.0075
+      0.0055
      ]
     ],
     "polymarket.cut50": [
@@ -6780,7 +6776,7 @@
      ],
      [
       "2026-11-22",
-      0.0045
+      0.0035
      ]
     ],
     "spdr.chgPct": [
@@ -7205,17 +7201,17 @@
    },
    "market_pricing": {
     "source": "Polymarket（Gamma API，经本机代理）",
-    "asOf": "2026-11-22 06:32",
+    "asOf": "2026-11-22 22:42",
     "url": "https://polymarket.com/zh/event/fed-decision-in-december-20260729232808632",
     "slug": "fed-decision-in-december-20260729232808632",
     "meeting": "Fed Decision in December?",
     "meetingDate": "2026-12-10",
     "closed": false,
-    "cut50": 0.0045,
-    "cut25": 0.0075,
+    "cut50": 0.0035,
+    "cut25": 0.0055,
     "hold": 0.0675,
     "hike25": 0.895,
-    "hike50": 0.022
+    "hike50": 0.0215
    }
   }
  }
